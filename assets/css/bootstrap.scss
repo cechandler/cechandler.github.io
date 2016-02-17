@@ -1,0 +1,363 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/*!
+ * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Customize bootstrap variables for my site
+$black:                     #202020;          // cec custom variable
+$gray-dark:                 #373a3c;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #f7f7f9;
+$white:                     #fff;             // cec custom variable
+
+$brand-primary:             #013ADF; // #0275d8;
+$brand-secondary:           #5bc0de;          // cec custom variable
+$brand-success:             #5cb85c;
+$brand-info:                #5bc0de;
+$brand-warning:             #f0ad4e;
+$brand-danger:              #d9534f;
+
+$background-color:          $gray-lighter;    // cec custom variable
+$container-color:           $gray-lightest;   // cec custom variable
+$body-bg:                   $background-color;
+
+$link-color:                $brand-primary;
+$link-decoration:           none;
+$link-hover-color:          darken($link-color, 15%);
+$link-hover-decoration:     none;
+
+$font-size-base:            0.95rem;
+$font-family-sans-serif:    'Source Sans Pro',Helvetica,Arial,sans-serif; // 'PT Sans'
+$font-family-serif:         'Merriweather',Georgia,"Times New Roman",Times,Baskerville,serif;
+$font-family-base:          $font-family-serif;
+
+$line-height:                1.75;
+
+$headings-font-family:      'PT Sans',Helvetica,Arial,sans-serif;
+$headings-font-weight:      bold;
+$headings-line-height:      1.1;
+$headings-color:            inherit;
+
+$sidebar-width:             10.5rem;          // cec custom variable
+
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             $btn-primary-bg;
+
+$btn-secondary-color:            $gray-dark;
+$btn-secondary-bg:               #fff;
+$btn-secondary-border:           $gray-dark;
+
+$btn-info-color:                 #fff;
+$btn-info-bg:                    $brand-info;
+$btn-info-border:                $btn-info-bg;
+
+$btn-border-radius:              0rem;
+$btn-border-radius-lg:           0rem;
+$btn-border-radius-sm:           0rem;
+
+// BOOTSTRAP SCSS IMPORTS
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Reset and dependencies
+@import "normalize";
+@import "print";
+
+// Core CSS
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+
+// Components
+@import "animation";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "pager";
+@import "labels";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "responsive-embed";
+@import "close";
+
+// Components w/ JavaScript
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+
+// Utility classes
+@import "utilities";
+@import "utilities-background";
+@import "utilities-spacing";
+@import "utilities-responsive";
+
+
+// CEC custom CSS
+// @media (min-width: 48em) {
+//   html {
+//     $font-size-root: 16px;
+//   }
+// }
+// @media (min-width: 58em) {
+//   html {
+//     $font-size-root: 20px;
+//   }
+// }
+
+body {
+  // font-weight: 300;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  background-color: $background-color;
+  height: 100%;
+  padding: 1rem 1rem;
+}
+.sidebar-nav {
+  padding-left: 0.75rem;
+}
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $sidebar-width;
+    padding: 1.5rem 1.75rem;
+    text-align: left;
+    // overflow-y: scroll;
+  }
+  .sidebar-nav {
+    padding-top: 3rem;
+    padding-left: 0rem;
+  }
+}
+
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+.sidebar a {
+  color: $gray-dark;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+.sidebar-about h1 {
+  color: $black;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
+}
+
+/*
+ * WRAPPER AND CONTAINER
+ */
+.wrapper {
+  // margin-bottom: 3rem;
+}
+@media (min-width: 48em) {
+  .wrapper {
+    width: calc(100% - $sidebar-width);
+    margin-left: $sidebar-width;
+  }
+  .container {
+    border-top: 0.65rem solid $gray-dark;
+  }
+}
+
+.container {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: $container-color;
+  border-top: 0.65rem solid $gray-dark;
+  width: 100%;
+  max-width: 58rem;
+}
+
+/*
+ * PAGE
+ */
+.page {
+  padding: 3rem 1rem;
+}
+
+/*
+ * POST
+ */
+.post {
+   margin-bottom: 2rem;
+ }
+.post-header {
+  margin-bottom: 0.5rem;
+}
+.post-header h4 {
+  margin-bottom: 0rem;
+}
+.post-meta {
+  color: $gray;
+}
+
+/*
+ * HOME
+ */
+.mini-bio {
+  margin-bottom: 2.5rem;
+}
+
+/*
+ * ABOUT
+ */
+.headshot img {
+  max-width: 100%;
+}
+@media (min-width: 40em) {
+  .headshot img {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 62em) {
+  .headshot img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+/*
+ * RECORDINGS
+ */
+.cd-cover img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.recording {
+  margin-bottom: 3rem;
+}
+.recording p {
+  margin-bottom: 0.25rem;
+}
+.composer{
+  color: $brand-primary;
+}
+.recording .work {
+  font-style: italic;
+}
+
+/*
+ * PERFORMANCES
+ */
+.year-btn {
+  margin-bottom: 1.5rem;
+}
+.performance {
+  margin-bottom: 2rem;
+}
+.performance img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.performance p {
+  margin: 0rem;
+}
+.colorblock {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  // height: 230px;
+  // width: 220px;
+}
+.composition {
+  font-style: italic;
+  padding-top: 0.75rem;
+}
+.location {
+  padding-bottom: 0.75rem;
+}
+
+/*
+ * MUSIC
+ */
+.filters li {
+  list-style-type: none;
+  margin-bottom: 0.35rem;
+}
+.filters ul {
+  padding-left: 0rem;
+}
+.title {
+  font-weight: bold;
+}
+.instrumentation {
+  color: $gray;
+}
+p.instrumentation {
+  margin-bottom: 0rem;
+}
+.perf-list p {
+  margin: 0rem;
+}
+.perf-list .perf {
+  margin-bottom: $spacer;
+}
+.duration {
+  color: $gray;
+}
+.score {
+  width: 100%;
+  height: 550px;
+}
+.work {
+  margin-bottom: $spacer;
+}
+// .listen {
+//   margin: $spacer 0rem;
+// }
+
+/*
+ * MIXITUP STYLING FOR WORKS AND PERFS
+ */
+.mixitup-music .work {
+	display: none;
+}
+.mixitup-event .performance {
+	display: none;
+}
+
+.btn-default:active, .btn-default.active {
+	background-color: $brand-primary;
+	color: $white;
+}
+
+.btn-sm {
+  margin-bottom: 0.5rem;
+}

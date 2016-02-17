@@ -1,0 +1,73 @@
+---
+layout: page
+title: Music
+---
+
+<div class="row">
+	<div class="filters col-lg-4 col-lg-push-8 col-md-4 col-md-push-8 col-sm-6 col-sm-push-6">
+		<!-- <h4>Instrumentation:</h4> -->
+		<ul>
+			<li>
+				<button
+					type="button"
+					class="btn btn-secondary-outline btn-sm btn-block filter-work"
+					data-filter="all">
+					All
+				</button>
+			</li>
+			<li>
+				<button
+					type="button"
+					class="btn btn-secondary-outline btn-sm btn-block filter-work"
+					data-filter=".large">
+					Large Ensemble
+				</button>
+			</li>
+			<li>
+				<button
+					type="button"
+					class="btn btn-secondary-outline btn-sm btn-block filter-work"
+					data-filter=".chamber">
+					Chamber Ensemble
+				</button>
+			</li>
+			<li>
+				<button
+					type="button"
+					class="btn btn-secondary-outline btn-sm btn-block filter-work"
+					data-filter=".electroacoustic">
+					Electroacoustic
+				</button>
+			</li>
+			<li>
+				<button
+					type="button"
+					class="btn btn-secondary-outline btn-sm btn-block filter-work"
+					data-filter=".solo">
+					Solo
+				</button>
+			</li>
+		</ul>
+	</div>
+
+	<div class="mixitup-music works-list col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-6 col-sm-pull-6">
+		{% for entry in site.data.works %}
+			{% if entry.Work == null %}
+			{% elsif entry.Special == 'E' %}
+			{% else %}
+			<div class='row work {{ entry.Type }}'>
+				 <!-- <div class='col-md-7 col-sm-9 col-xs-10 info'> -->
+				 <div class='col-md-12 col-sm-9 col-xs-10 info'>
+					{% if entry.Link == null %}
+						<span class='title'>{{ entry.Work }}</span>
+					{% else %}
+						<span class='title'><a href="./music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
+					{% endif %}
+					 <span class='year'>({{ entry.Year }})</span>
+					 <p class='instrumentation'>for {{ entry.Instrumentation }}</p>
+				 </div> <!-- /info -->
+			 </div> <!-- /.work -->
+			{% endif %}
+		{% endfor %}
+	</div><!-- /.mixitup-music -->
+</div>

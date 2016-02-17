@@ -1,0 +1,31 @@
+<div class="row work">
+  <div class="col-md-7">
+
+    <h3>{{ entry.Work }} ({{ entry.Year }})</h3>
+    <p class="instrumentation">for {{ entry.Instrumentation }}</p>
+    <p class="duration">{{ entry.Duration }} min</p>
+
+    {% if entry.Audio == null %}
+    {% else %}
+      <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.mp3" controls="controls" style="width:100%;height:100%;"></audio>
+    {% endif %}
+
+    {% if entry.Notes == null %}
+    {% else %}
+      <p class="program-notes">{{ entry.Notes }}</p>
+    {% endif %}
+
+  </div>
+
+  <div class="col-md-5">
+    <!-- <a class="fancybox" rel="group" href="big_image_1.jpg"><img src="small_image_1.jpg" alt="" /></a> -->
+    <a class="fancybox" rel="group" href="{{ site.baseurl }}/assets/scores/{{ entry.Score }}">
+      <img src="{{ site.baseurl }}/assets/scores/{{ entry.Score }}" alt="" style="width:100%;height:100%;"/>
+    </a>
+    <a class="fancybox" rel="group" href="{{ site.baseurl }}/assets/scores/{{ entry.Score }}">
+      <img src="{{ site.baseurl }}/assets/scores/{{ entry.Score }}" alt="" style="width:100%;height:100%;"/>
+    </a>
+    <!-- <embed class="score" src="{{ site.baseurl }}/assets/scores/{{ entry.Score }}.pdf" type='application/pdf'> -->
+  </div>
+
+</div>
