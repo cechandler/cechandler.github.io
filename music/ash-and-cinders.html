@@ -5,4 +5,54 @@ title: Ash and Cinders
 
 {% assign work = "Ash and Cinders" %}
 
-{% include music-info.html %}
+{% for entry in site.data.works %}
+  {% if entry.Work == work %}
+
+    {% if entry.Score == null %}
+
+      <div class="row work">
+        <div class="col-md-12">
+
+          {% include music-title.html %}
+
+          <div class="row">
+            <div class="col-md-7">
+
+              {% include music-audio.html %}
+
+            </div>
+          </div>
+
+          {% include music-program-notes.html %}
+
+        </div>
+      </div>
+
+    {% else %}
+
+    <div class="row work">
+      <div class="col-md-7">
+
+        {% include music-title.html %}
+
+        {% include music-audio.html %}
+
+        {% include music-program-notes.html %}
+
+      </div>
+
+      <div class="col-md-5">
+
+        {% include music-score.html %}
+
+      </div>
+
+    </div>
+
+    {% endif %}
+
+    {% include music-perf-list.html %}
+
+  {% else %}
+  {% endif %}
+{% endfor %}
