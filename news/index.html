@@ -5,7 +5,8 @@ title: News
 
 <article class="page">
   <div class="news row">
-    <div class="post-list col-md-8">
+
+    <div class="post-list col-md-12">
       <h1 class="page-heading">News</h1>
         {% for post in paginator.posts %}
           <div class="post">
@@ -20,7 +21,7 @@ title: News
         {% endfor %}
 
         <!-- Pagination links -->
-        <div class="pagination">
+        <div class="pagination justified">
           {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path }}" class="previous">
               <button type="button" class="btn btn-secondary-outline btn-sm">Newer</button>
@@ -39,10 +40,6 @@ title: News
         </div>
 
       </div>
-
-    <div class="aside col-md-4">
-      {% include home-right-side.html %}
-    </div>
 
   </div>
 </article>

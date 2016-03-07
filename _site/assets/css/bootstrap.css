@@ -4656,7 +4656,7 @@ a.bg-danger:focus, a.bg-danger:hover {
     display: none !important; } }
 
 /*
- * Sidebar
+ * Navigation
  */
 .sidebar {
   background-color: #eceeef;
@@ -4679,41 +4679,56 @@ a.bg-danger:focus, a.bg-danger:hover {
   .sidebar-nav {
     padding-top: 3rem;
     padding-left: 0rem; } }
-.sidebar-nav-item {
+.navbar .nav-item {
   display: block;
+  float: none;
   line-height: 1.75; }
 
-.sidebar a {
-  color: #373a3c; }
+@media (min-width: 48em) {
+  .navbar .justified {
+    margin: 0rem auto;
+    display: table;
+    table-layout: fixed;
+    float: none; }
 
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
-  text-decoration: underline; }
+  .navbar .nav-item {
+    display: list-item;
+    float: left; } }
+.navbar .justified {
+  margin: 0rem auto; }
 
-.sidebar-nav-item.active {
+.navbar .container {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.nav-item a {
+  color: #818a91; }
+
+.nav-item.active a {
+  color: #373a3c;
   font-weight: bold; }
 
-.sidebar-about h1 {
-  color: #202020;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem; }
+a.nav-link:hover,
+a.nav-link:focus {
+  color: #5c6469; }
 
 /*
  * WRAPPER AND CONTAINER
  */
 @media (min-width: 48em) {
-  .wrapper {
-    width: calc(100% - $sidebar-width);
-    margin-left: 10.5rem; }
-
   .container {
+    background-color: #f7f7f9; }
+
+  .wrapper .container {
     border-top: 0.65rem solid #373a3c; } }
 .container {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   background-color: #f7f7f9;
-  border-top: 0.65rem solid #373a3c;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 58rem; }
+
+.wrapper .container {
+  border-top: 0.65rem solid #373a3c; }
 
 /*
  * PAGE
@@ -4735,6 +4750,10 @@ a.sidebar-nav-item:focus {
 
 .post-meta {
   color: #55595c; }
+
+.pagination button {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
 
 /*
  * HOME
@@ -4781,7 +4800,7 @@ a.sidebar-nav-item:focus {
   margin-bottom: 1.5rem; }
 
 .performance {
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
 
 .performance img {
   max-width: 100%;

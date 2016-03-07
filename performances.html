@@ -3,6 +3,7 @@ layout: page
 title: Performances
 ---
 
+<!-- capture current year and store in variable -->
 {% capture current_year %}{{ site.time | date: '%Y' }}{% endcapture %}
 
 <div class="year-btn">
@@ -18,6 +19,8 @@ title: Performances
 		data-filter="all">
 		All
 	</button>
+
+	<!-- conditionally generate buttons based on current year variable -->
 	{% for i in (2008..current_year) reversed %}
 		<button
 			type="button"
@@ -26,11 +29,12 @@ title: Performances
 			{{ i }}
 		</button>
 	{% endfor %}
+
 </div>
 
 
 <div class="mixitup-event performance-list">
-	<!-- liquid captures enable storing variables -->
+	<!-- liquid capture stores variable -->
 	<!-- %s filter is a unix timestamp to compare current time with performance date for upcoming class -->
 	{% for entry in site.data.performances %}
 		{% if entry.Composition == null %}
@@ -38,12 +42,15 @@ title: Performances
 			{% capture time_now %}{{ 'now' | date: "%s" }}{% endcapture %}
 			{% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
 			{% capture perf_date %}{{ full_date | date: '%s' }}{% endcapture %}
+
 			<div class="performance {{ entry.Year }} {% if perf_date > time_now %} upcoming {% endif %}">
 
-				 <div class="row hidden-xs-down">
+
+				<div class="row hidden-xs-down">
 
 					 {% if entry.Image == null %}
-					 	 <!-- <div class="colorblock col-xs-4 col-md-4"><img src="" alt=""></div> -->
+					 <div class="col-xs-4 col-md-4">
+					 </div>
 					 {% else %}
 					   <div class="col-xs-4 col-md-4">
 							 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
@@ -67,14 +74,14 @@ title: Performances
 						 {% endif %}
 
 						 <div class="address">
-						 	<p>{{ entry.Venue }}</p>
+							 <p>{{ entry.Venue }}</p>
 
-						 	{% if entry.Street == null %}
-						 	{% else %}
-						 			<p>{{ entry.Street }}</p>
-						 	{% endif %}
+							 {% if entry.Street == null %}
+							 {% else %}
+							 	 <p>{{ entry.Street }}</p>
+							 {% endif %}
 
-						 	<p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
+							 <p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
 						 </div>
 
 						 {% if entry.Time == null %}
@@ -100,14 +107,18 @@ title: Performances
 				 <div class="row hidden-sm-up">
 
 						{% if entry.Image == null %}
- 							<!-- <div class="colorblock col-xs-6"><img src="" alt=""></div> -->
- 						{% else %}
+							<div class="col-xs-6">
+							</div>
+						{% else %}
  							<div class="col-xs-6">
  								<img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
  							</div>
- 						{% endif %}
- 							<h3 class="date">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</h3>
- 							<h4 class="location">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</h4>
+						{% endif %}
+
+						<div class="col-xs-6">
+							<h3 class="date">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</h3>
+							<h4 class="location">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</h4>
+						</div>
 
 						<div class="details col-xs-12">
 	 						{% if entry.Conductor == null %}
@@ -151,7 +162,8 @@ title: Performances
 						</div><!-- /.details -->
 
 					</div><!-- /.row hidden at small and up -->
+
 			</div><!-- /.performance -->
 		{% endif %}
 	{% endfor %}
-</div>
+</div> <!-- /.performance-list -->

@@ -133,7 +133,7 @@ body {
 }
 
 /*
- * Sidebar
+ * Navigation
  */
 .sidebar {
   background-color: $background-color;
@@ -160,48 +160,68 @@ body {
   }
 }
 
-.sidebar-nav-item {
+.navbar .nav-item {
   display: block;
+  float: none;
   line-height: 1.75;
 }
-.sidebar a {
+
+@media (min-width: 48em){
+  .navbar .justified {
+    margin: 0rem auto;
+    display: table;
+    table-layout: fixed;
+    float: none;
+  }
+  .navbar .nav-item {
+    display: list-item;
+    float: left;
+  }
+}
+.navbar .justified {
+  margin: 0rem auto;
+}
+.navbar .container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.nav-item a {
+  color: $gray-light;
+}
+.nav-item.active a {
   color: $gray-dark;
-}
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
-  text-decoration: underline;
-}
-.sidebar-nav-item.active {
   font-weight: bold;
 }
-.sidebar-about h1 {
-  color: $black;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+a.nav-link:hover,
+a.nav-link:focus {
+  color: darken($gray-light, 15%);
 }
 
 /*
  * WRAPPER AND CONTAINER
  */
-.wrapper {
-  // margin-bottom: 3rem;
-}
 @media (min-width: 48em) {
   .wrapper {
-    width: calc(100% - $sidebar-width);
-    margin-left: $sidebar-width;
+    // margin-top: 1rem;
+    // width: calc(100% - $sidebar-width);
+    // margin-left: $sidebar-width;
   }
   .container {
+    background-color: $container-color;
+  }
+  .wrapper .container {
     border-top: 0.65rem solid $gray-dark;
   }
 }
 
 .container {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   background-color: $container-color;
-  border-top: 0.65rem solid $gray-dark;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 58rem;
+}
+.wrapper .container {
+  border-top: 0.65rem solid $gray-dark;
 }
 
 /*
@@ -225,6 +245,10 @@ a.sidebar-nav-item:focus {
 }
 .post-meta {
   color: $gray;
+}
+.pagination button {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 /*
@@ -280,7 +304,7 @@ a.sidebar-nav-item:focus {
   margin-bottom: 1.5rem;
 }
 .performance {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .performance img {
   max-width: 100%;
