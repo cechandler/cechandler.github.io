@@ -4664,7 +4664,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   line-height: 1.75; }
 
 @media (min-width: 48em) {
-  .navbar .justified {
+  .justified {
     margin: 0rem auto;
     display: table;
     table-layout: fixed;
@@ -4673,15 +4673,15 @@ a.bg-danger:focus, a.bg-danger:hover {
   .navbar .nav-item {
     display: list-item;
     float: left; } }
-.navbar .justified {
-  margin: 0rem auto; }
-
 .navbar .container {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
 .nav-item a {
   color: #818a91; }
+
+.nav-item.first {
+  margin-left: 1rem; }
 
 .nav-item.active a {
   color: #373a3c;

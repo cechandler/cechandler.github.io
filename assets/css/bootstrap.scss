@@ -142,7 +142,7 @@ body {
 }
 
 @media (min-width: 48em){
-  .navbar .justified {
+  .justified {
     margin: 0rem auto;
     display: table;
     table-layout: fixed;
@@ -153,15 +153,16 @@ body {
     float: left;
   }
 }
-.navbar .justified {
-  margin: 0rem auto;
-}
+
 .navbar .container {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .nav-item a {
   color: $gray-light;
+}
+.nav-item.first {
+  margin-left: 1rem;
 }
 .nav-item.active a {
   color: $gray-dark;
