@@ -1,4 +1,8 @@
 {% if entry.Audio == null %}
+  <p>
+    {{ include.param }}
+    {{ include.variable-param }}
+  </p>
 {% else %}
   <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.mp3" controls="controls" style="width:100%;height:100%;"></audio>
 {% endif %}

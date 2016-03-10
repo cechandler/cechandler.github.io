@@ -4658,27 +4658,6 @@ a.bg-danger:focus, a.bg-danger:hover {
 /*
  * Navigation
  */
-.sidebar {
-  background-color: #eceeef;
-  height: 100%;
-  padding: 1rem 1rem; }
-
-.sidebar-nav {
-  padding-left: 0.75rem; }
-
-@media (min-width: 48em) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 10.5rem;
-    padding: 1.5rem 1.75rem;
-    text-align: left; }
-
-  .sidebar-nav {
-    padding-top: 3rem;
-    padding-left: 0rem; } }
 .navbar .nav-item {
   display: block;
   float: none;
@@ -4871,3 +4850,33 @@ p.instrumentation {
 
 .btn-sm, .btn-group-sm > .btn {
   margin-bottom: 0.5rem; }
+
+/*
+* FANCYBOX
+*/
+.hidden {
+  display: none; }
+
+#links {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  padding-top: 10px;
+  list-style: none;
+  text-align: center;
+  z-index: 99999; }
+
+#links li {
+  display: inline;
+  padding: 0 5px; }
+
+#links li label {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer; }
+
+#links li.active label {
+  background-color: #013ADF; }
