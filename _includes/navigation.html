@@ -1,31 +1,3 @@
-<!-- <nav class="navbar navbar-static-top">
-  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
-    <i class="fa fa-bars"></i>
-  </button>
-  <div id="navbar-header" class="collapse navbar-toggleable-sm">
-    <div class="container">
-      <ul class="nav navbar-nav justified">
-        {% for link in site.navigation %}
-          {% assign current = nil %}
-          {% if page.url contains link.url %}
-
-            {% assign current = "active <span class="sr-only">(current)</span>" %}
-          {% elsif page.url contains "music" and link.url contains "music" %}
-            {% assign current = "active <span class="sr-only">(current)</span>" %}
-          {% elsif page.url contains "news" and link.url contains "news" %}
-            {% assign current = "active <span class="sr-only">(current)</span>" %}
-          {% endif %}
-
-          <li class="nav-item {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-            <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
-          </li>
-
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</nav> -->
-
 <nav class="navbar navbar-static-top">
   <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header">
     <i class="fa fa-bars"></i>

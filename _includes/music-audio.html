@@ -1,8 +1,31 @@
-{% if entry.Audio == null %}
-  <p>
-    {{ include.param }}
-    {{ include.variable-param }}
-  </p>
+{% if include.type == "aif" %}
+  {% assign type = "aif" %}
 {% else %}
-  <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.mp3" controls="controls" style="width:100%;height:100%;"></audio>
+  {% assign type = "mp3" %}
+{% endif %}
+
+{% if include.score == "N" %}
+
+  <div class="row">
+    <div class="col-md-7">
+
+      {% if entry.Audio == null %}
+      {% else %}
+        <p>
+          <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.{{ type }}" controls="controls" style="width:100%;height:100%;"></audio>
+        </p>
+      {% endif %}
+
+    </div>
+  </div>
+
+{% elsif include.score == "Y" %}
+  {% if entry.Audio == null %}
+  {% else %}
+    <p>
+      <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.{{ type }}" controls="controls" style="width:100%;height:100%;"></audio>
+    </p>
+  {% endif %}
+
+{% else %}
 {% endif %}
