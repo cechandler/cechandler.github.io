@@ -12,7 +12,9 @@
       {% if entry.Audio == null %}
       {% else %}
         <p>
-          <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.{{ type }}" controls="controls" style="width:100%;height:100%;"></audio>
+          <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.{{ type }}" controls="controls" style="width:100%;height:100%;">
+            <p>Your browser doesn't support HTML 5 audio, so click <a href="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.{{ type }}">here</a> to listen.</p>
+          </audio>
         </p>
       {% endif %}
 
@@ -23,7 +25,9 @@
   {% if entry.Audio == null %}
   {% else %}
     <p>
-      <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.{{ type }}" controls="controls" style="width:100%;height:100%;"></audio>
+      <audio src="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.{{ type }}" controls="controls" style="width:100%;height:100%;">
+        <p>Your browser doesn't support HTML 5 audio, so click <a href="{{ site.baseurl }}/assets/audio/{{ entry.Audio }}.{{ type }}">here</a> to listen.</p>
+      </audio>
     </p>
   {% endif %}
 
