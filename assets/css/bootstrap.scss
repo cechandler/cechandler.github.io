@@ -9,23 +9,23 @@
  */
 
 // Customize bootstrap variables for my site
-$black:                     #202020;          // cec custom variable
+$black:                     #202020;
 $gray-dark:                 #373a3c;
 $gray:                      #55595c;
 $gray-light:                #818a91;
 $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
-$white:                     #fff;             // cec custom variable
+$white:                     #fff;
 
-$brand-primary:             #013ADF; // #0275d8;
-$brand-secondary:           #5bc0de;          // cec custom variable
+$brand-primary:             #0275d8; // #013ADF; // #313042; //
+$brand-secondary:           #5bc0de;
 $brand-success:             #5cb85c;
 $brand-info:                #5bc0de;
 $brand-warning:             #f0ad4e;
 $brand-danger:              #d9534f;
 
-$background-color:          $gray-lighter;    // cec custom variable
-$container-color:           $gray-lightest;   // cec custom variable
+$background-color:          $gray-lighter;
+$container-color:           $gray-lightest;
 $body-bg:                   $background-color;
 
 $link-color:                $brand-primary;
