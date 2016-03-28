@@ -61,7 +61,7 @@ title: Music
 					{% if entry.Link == null %}
 						<span class='title'>{{ entry.Work }}</span>
 					{% else %}
-						<span class='title'><a href="./music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
+						<span class='title'><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
 					{% endif %}
 					 <span class='year'>({{ entry.Year }})</span>
 					 <p class='instrumentation'>for {{ entry.Instrumentation }}</p>
