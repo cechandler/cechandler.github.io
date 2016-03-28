@@ -13,7 +13,8 @@ $black:                     #202020;
 $gray-dark:                 #373a3c;
 $gray:                      #55595c;
 $gray-light:                #818a91;
-$gray-lighter:              #eceeef;
+$gray-lighter:              lighten($gray-light, 15%);
+$gray-lighterer:            #eceeef;
 $gray-lightest:             #f7f7f9;
 $white:                     #fff;
 
@@ -24,7 +25,7 @@ $brand-info:                #5bc0de;
 $brand-warning:             #f0ad4e;
 $brand-danger:              #d9534f;
 
-$background-color:          $gray-lighter;
+$background-color:          $gray-lighterer;
 $container-color:           $gray-lightest;
 $body-bg:                   $background-color;
 
@@ -117,12 +118,12 @@ $btn-border-radius-sm:           0rem;
 
 
 // CEC custom CSS
-// @media (min-width: 48em) {
+// @include media-breakpoint-up(md) {
 //   html {
 //     $font-size-root: 16px;
 //   }
 // }
-// @media (min-width: 58em) {
+// @include media-breakpoint-up(lg) {
 //   html {
 //     $font-size-root: 20px;
 //   }
@@ -141,7 +142,7 @@ body {
   line-height: 1.75;
 }
 
-@media (min-width: 48em){
+@include media-breakpoint-up(md) {
   .justified {
     margin: 0rem auto;
     display: table;
@@ -176,7 +177,7 @@ a.nav-link:focus {
 /*
  * WRAPPER AND CONTAINER
  */
-@media (min-width: 48em) {
+@include media-breakpoint-up(md) {
   .wrapper {
     // margin-top: 1rem;
     // width: calc(100% - $sidebar-width);
@@ -228,6 +229,41 @@ a.nav-link:focus {
 }
 
 /*
+ * POST
+ */
+.archive-item {
+  margin-bottom: 0.5rem;
+  overflow: auto;
+}
+.archive-date {
+  color: $gray-light;
+  float: none;
+  display: block;
+  margin-left: 0rem;
+}
+@include media-breakpoint-up(sm) {
+  .archive-date {
+    float: right;
+    display: inline;
+    margin-left: 1rem;
+  }
+}
+.archive-item + .archive-year {
+  margin-top: 1.5rem;
+}
+
+body a {
+  color: $black;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+body nav a,
+body a.more,
+body a.mejs-horizontal-volume-slider {
+  border-bottom: 0px solid $gray-lighter;
+}
+
+/*
  * HOME
  */
 .mini-bio {
@@ -246,7 +282,7 @@ a.nav-link:focus {
   }
 }
 
-@media (min-width: 62em) {
+@include media-breakpoint-up(lg) {
   .headshot img {
     max-width: 100%;
     max-height: 100%;
@@ -395,4 +431,13 @@ p.instrumentation {
 
 #links li.active label {
     background-color: $brand-primary;
+}
+
+
+hr {
+  width: 100px;
+  height: 1px;
+  margin: 2rem auto;
+  background-color: $gray-lighter;
+  border: 0;
 }

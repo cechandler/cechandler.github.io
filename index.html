@@ -12,7 +12,7 @@ layout: default
 
           <div class="post">
             <div class="post-header">
-              <h6><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> || {{ post.title }}</h6>
+              <h6><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> || {{ post.title }}</h6>
               <!-- <h5><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
             </div>
@@ -24,40 +24,11 @@ layout: default
 
         {% endfor %}
 
-        <!-- Pagination links -->
-        <div class="pagination justified">
-
-          {% if paginator.previous_page %}
-
-            <a href="{{ paginator.previous_page_path }}" class="previous">
-              <button type="button" class="btn btn-secondary-outline btn-sm">Newer</button>
-            </a>
-
-          {% else %}
-
-            <span class="previous">
-              <button type="button" class="btn btn-secondary-outline btn-sm" disabled>Newer</button>
-            </span>
-
-          {% endif %}
-
-            <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-          {% if paginator.next_page %}
-
-            <a href="{{ paginator.next_page_path }}" class="next">
-              <button type="button" class="btn btn-secondary-outline btn-sm">Older</button>
-            </a>
-
-          {% else %}
-
-            <span class="next ">
-              <button type="button" class="btn btn-secondary-outline btn-sm" disabled>Older</button>
-            </span>
-
-          {% endif %}
-
-        </div><!-- ./pagination -->
+        <div class="text-xs-center">
+          <a href="{{ site.baseurl }}/archives/" class="more">
+            <button type="button" class="btn btn-secondary-outline btn-sm">More News</button>
+          </a>
+        </div>
 
       </div><!-- ./post-list -->
 
