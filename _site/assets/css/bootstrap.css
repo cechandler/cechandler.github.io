@@ -4734,25 +4734,22 @@ a.nav-link:focus {
   margin-left: 1.5rem;
   margin-right: 1.5rem; }
 
-/*
- * POST
- */
 .archive-item {
   margin-bottom: 0.5rem;
   overflow: auto; }
 
-.archive-date {
+.post-date, .archive-date {
   color: #818a91;
   float: none;
   display: block;
   margin-left: 0rem; }
 
 @media (min-width: 544px) {
-  .archive-date {
+  .post-date, .archive-date {
     float: right;
     display: inline;
     margin-left: 1rem; } }
-.archive-item + .archive-year {
+.archive-year {
   margin-top: 1.5rem; }
 
 body a {
@@ -4767,8 +4764,9 @@ body a.mejs-horizontal-volume-slider {
 /*
  * HOME
  */
-.mini-bio {
-  margin-bottom: 2.5rem; }
+.home-header img {
+  max-width: 100%;
+  margin-bottom: 2rem; }
 
 /*
  * ABOUT
@@ -4813,15 +4811,11 @@ body a.mejs-horizontal-volume-slider {
 
 .performance img {
   max-width: 100%;
-  max-height: 100%; }
+  max-height: 100%;
+  margin-bottom: 1rem; }
 
 .performance p {
   margin: 0rem; }
-
-.colorblock {
-  display: block;
-  max-width: 100%;
-  max-height: 100%; }
 
 .composition {
   font-style: italic;
@@ -4833,12 +4827,8 @@ body a.mejs-horizontal-volume-slider {
 /*
  * MUSIC
  */
-.filters li {
-  list-style-type: none;
-  margin-bottom: 0.35rem; }
-
-.filters ul {
-  padding-left: 0rem; }
+.filters {
+  margin-bottom: 1rem; }
 
 .title {
   font-weight: bold; }
@@ -4915,5 +4905,10 @@ hr {
   width: 100px;
   height: 1px;
   margin: 2rem auto;
-  background-color: #aab0b5;
+  background-color: #eceeef;
   border: 0; }
+
+::selection {
+  background: #5cb85c;
+  color: #fafcf9;
+  text-shadow: none; }

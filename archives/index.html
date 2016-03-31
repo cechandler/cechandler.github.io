@@ -22,9 +22,7 @@ layout: default
           <div class="panel-heading archive-item" role="tab" id="heading-{{ post.id | remove: '/'}}">
             <span class="panel-title">
               <span class="post-date archive-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ post.id | remove: '/'}}" aria-expanded="false" aria-controls="collapse-{{ post.id | remove: '/'}}">
-                {{ post.title }}
-              </a>
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ post.id | remove: '/'}}" aria-expanded="false" aria-controls="collapse-{{ post.id | remove: '/'}}">{{ post.title }}</a>
             </span>
           </div>
           <div id="collapse-{{ post.id | remove: '/'}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ post.id | remove: '/'}}">
@@ -34,7 +32,7 @@ layout: default
           {% endfor %}
 
         </div>
-      </div><!--  ./accordion -->
+      </div>
 
       <!-- {% for post in site.posts %}
         {% assign currentdate = post.date | date: "%Y" %}
@@ -49,6 +47,5 @@ layout: default
       {% endfor %} -->
 
     </div><!-- ./post-list -->
-
   </div><!-- ./news row -->
 </article>

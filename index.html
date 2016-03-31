@@ -6,13 +6,20 @@ layout: default
   <div class="news row">
 
     <div class="post-list col-md-12">
-      <h1 class="page-heading">Home</h1>
+      <h1 class="page-heading text-xs-center">Christopher Chandler</h1>
+
+        <div class="row">
+          <div class="col-xs-12 home-header">
+            <img src="{{ site.baseurl }}/assets/img/dili-ossia-cropped.jpg" alt="">
+          </div>
+        </div>
 
         {% for post in paginator.posts %}
 
           <div class="post">
             <div class="post-header">
-              <h6><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> || {{ post.title }}</h6>
+              <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+              <h5>{{ post.title }}</h5>
               <!-- <h5><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
             </div>
