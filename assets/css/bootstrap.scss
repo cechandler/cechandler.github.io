@@ -46,8 +46,6 @@ $headings-font-weight:      bold;
 $headings-line-height:      1.1;
 $headings-color:            inherit;
 
-$sidebar-width:             10.5rem;          // cec custom variable
-
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
 $btn-primary-border:             $btn-primary-bg;
@@ -116,23 +114,6 @@ $btn-border-radius-sm:           0rem;
 @import "utilities-spacing";
 @import "utilities-responsive";
 
-
-// CEC custom CSS
-// @include media-breakpoint-up(md) {
-//   html {
-//     $font-size-root: 16px;
-//   }
-// }
-// @include media-breakpoint-up(lg) {
-//   html {
-//     $font-size-root: 20px;
-//   }
-// }
-
-body {
-  // font-weight: 300;
-}
-
 /*
  * Navigation
  */
@@ -178,11 +159,6 @@ a.nav-link:focus {
  * WRAPPER AND CONTAINER
  */
 @include media-breakpoint-up(md) {
-  .wrapper {
-    // margin-top: 1rem;
-    // width: calc(100% - $sidebar-width);
-    // margin-left: $sidebar-width;
-  }
   .container {
     background-color: $container-color;
   }
@@ -228,27 +204,24 @@ a.nav-link:focus {
   margin-right: 1.5rem;
 }
 
-/*
- * POST
- */
 .archive-item {
   margin-bottom: 0.5rem;
   overflow: auto;
 }
-.archive-date {
+.post-date, .archive-date {
   color: $gray-light;
   float: none;
   display: block;
   margin-left: 0rem;
 }
 @include media-breakpoint-up(sm) {
-  .archive-date {
+  .post-date, .archive-date {
     float: right;
     display: inline;
     margin-left: 1rem;
   }
 }
-.archive-item + .archive-year {
+.archive-year {
   margin-top: 1.5rem;
 }
 
@@ -266,8 +239,9 @@ body a.mejs-horizontal-volume-slider {
 /*
  * HOME
  */
-.mini-bio {
-  margin-bottom: 2.5rem;
+.home-header img {
+  max-width: 100%;
+  margin-bottom: 2rem;
 }
 
 /*
@@ -321,17 +295,12 @@ body a.mejs-horizontal-volume-slider {
 .performance img {
   max-width: 100%;
   max-height: 100%;
+  margin-bottom: 1rem;
 }
 .performance p {
   margin: 0rem;
 }
-.colorblock {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  // height: 230px;
-  // width: 220px;
-}
+
 .composition {
   font-style: italic;
   padding-top: 0.75rem;
@@ -340,16 +309,13 @@ body a.mejs-horizontal-volume-slider {
   padding-bottom: 0.75rem;
 }
 
+
 /*
  * MUSIC
  */
-.filters li {
-  list-style-type: none;
-  margin-bottom: 0.35rem;
-}
-.filters ul {
-  padding-left: 0rem;
-}
+ .filters {
+   margin-bottom: 1rem;
+ }
 .title {
   font-weight: bold;
 }
@@ -438,6 +404,12 @@ hr {
   width: 100px;
   height: 1px;
   margin: 2rem auto;
-  background-color: $gray-lighter;
+  background-color: $gray-lighterer;
   border: 0;
+}
+
+::selection {
+  background: $brand-success; // #ff4136;
+  color: #fafcf9;
+  text-shadow: none
 }
