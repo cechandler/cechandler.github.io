@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="page">
-  <div class="news row">
+  <div class="home row">
 
     <div class="post-list col-md-12">
       <h1 class="page-heading text-xs-center">Christopher Chandler</h1>
@@ -14,30 +14,5 @@ layout: default
           </div>
         </div>
 
-        {% for post in paginator.posts %}
-
-          <div class="post">
-            <div class="post-header">
-              <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-              <h5>{{ post.title }}</h5>
-              <!-- <h5><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-            </div>
-            <div class="post-content">
-              {{ post.content }}
-            </div>
-            <hr />
-          </div>
-
-        {% endfor %}
-
-        <div class="text-xs-center">
-          <a href="{{ site.baseurl }}/archives/" class="more">
-            <button type="button" class="btn btn-secondary-outline btn-sm">More News</button>
-          </a>
-        </div>
-
-      </div><!-- ./post-list -->
-
-  </div><!-- ./news row -->
+  </div><!-- ./news-row -->
 </article>

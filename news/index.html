@@ -2,3 +2,36 @@
 layout: default
 title: News
 ---
+
+<article class="page">
+  <div class="news row">
+
+    <div class="post-list col-md-12">
+      <h1 class="page-heading text-xs-center">{{ page.title }}</h1>
+
+        {% for post in site.posts limit:10 %}
+          {% if post.categories contains "news" %}
+            <div class="post">
+              <div class="post-header">
+                <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                <h5>{{ post.title }}</h5>
+              </div>
+              <div class="post-content">
+                {{ post.content }}
+              </div>
+              <div class="post-footer"></div>
+              <hr />
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        <div class="text-xs-center">
+          <a href="{{ site.baseurl }}/archives/" class="more">
+            <button type="button" class="btn btn-secondary-outline btn-sm">More News</button>
+          </a>
+        </div>
+
+      </div><!-- ./post-list -->
+
+  </div><!-- ./news-row -->
+</article>

@@ -8,7 +8,8 @@ layout: default
     <div class="post-list col-md-12">
       <h1 class="page-heading">Archives</h1>
 
-      <div id="accordion" role="tablist" aria-multiselectable="true">
+      <!-- accordion style posts -->
+      <!-- <div id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
 
           {% for post in site.posts %}
@@ -32,9 +33,9 @@ layout: default
           {% endfor %}
 
         </div>
-      </div>
+      </div> -->
 
-      <!-- {% for post in site.posts %}
+      {% for post in site.posts %}
         {% assign currentdate = post.date | date: "%Y" %}
         {% if currentdate != date %}
           <h4 id="y{{post.date | date: "%Y"}}" class="archive-year">{{ currentdate }}</h4>
@@ -44,7 +45,7 @@ layout: default
             <span class="post-date archive-date">{{ post.date | date: "%B %-d, %Y" }}</span>
             <a href="{{ post.url }}">{{ post.title }}</a>
           </div>
-      {% endfor %} -->
+      {% endfor %}
 
     </div><!-- ./post-list -->
   </div><!-- ./news row -->

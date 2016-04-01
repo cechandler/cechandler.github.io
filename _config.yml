@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 gems: [jekyll-paginate]
-paginate_path: "/home/page:num"
+paginate_path: "/news/page:num"
 
 # Build settings
 markdown: kramdown
@@ -17,6 +17,8 @@ markdown: kramdown
 navigation:
  - title: Home
    url: /index.html
+ - title: News
+   url: /news/
  - title: About
    url: /about/
  - title: Music

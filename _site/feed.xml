@@ -6,9 +6,27 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Apr 2016 11:16:31 -0400</pubDate>
-    <lastBuildDate>Fri, 01 Apr 2016 11:16:31 -0400</lastBuildDate>
+    <pubDate>Fri, 01 Apr 2016 12:40:18 -0400</pubDate>
+    <lastBuildDate>Fri, 01 Apr 2016 12:40:18 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Test Quote</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;i class=&quot;fa fa-quote-left fa-2x fa-pull-left fa-border&quot;&gt;&lt;/i&gt;
+…tomorrow we will run faster, stretch out our arms farther…
+And then one fine morning— So we beat on, boats against the
+current, borne back ceaselessly into the past.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 01 Apr 2016 00:00:00 -0400</pubDate>
+        <link>/2016/04/01/test-quote</link>
+        <guid isPermaLink="true">/2016/04/01/test-quote</guid>
+        
+        
+        <category>quote</category>
+        
+      </item>
     
       <item>
         <title>New Website</title>
