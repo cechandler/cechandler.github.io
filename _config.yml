@@ -27,5 +27,5 @@ navigation:
    url: /performances/
 
 # Outputting
-permalink: date
+permalink: /:year/:month/:day/:title
 paginate: 10
