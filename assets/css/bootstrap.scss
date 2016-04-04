@@ -292,7 +292,10 @@ body a.mejs-horizontal-volume-slider {
 .performance {
   margin-bottom: 3rem;
 }
-.performance img {
+.latest .performance {
+  margin-bottom: 1rem;
+}
+.performance img, .latest img {
   max-width: 100%;
   max-height: 100%;
   margin-bottom: 1rem;
@@ -416,4 +419,8 @@ hr {
 
 .latest {
   font-size: 0.75rem;
+}
+
+.featured-works {
+  margin-bottom: 2rem;
 }
