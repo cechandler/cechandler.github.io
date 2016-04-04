@@ -1,0 +1,75 @@
+<div class="latest performance-list">
+	<!-- liquid capture stores variable -->
+	<!-- %s filter is a unix timestamp to compare current time with performance date for upcoming class -->
+	{% for entry in site.data.performances limit:6 %}
+		{% if entry.Composition == null %}
+		{% else %}
+			{% capture time_now %}{{ 'now' | date: "%s" }}{% endcapture %}
+			{% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
+			{% capture perf_date %}{{ full_date | date: '%s' }}{% endcapture %}
+
+			<div class="performance {{ entry.Year }} {% if perf_date > time_now %} upcoming {% endif %}">
+
+				<div class="row">
+
+					 {% if entry.Image == null %}
+					 <div class="col-xs-4">
+					 </div>
+					 {% else %}
+					   <div class="col-xs-4">
+							 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
+						 </div>
+					 {% endif %}
+
+				 	 <div class="details col-xs-8">
+						 <p class="date font-weight-bold">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</p>
+
+						 {% if entry.Conductor == null %}
+						 	 <p class="performer">{{ entry.Performers }}</p>
+						 {% else %}
+							 <p class="performer">{{ entry.Performers }}</p>
+							 <p class="conductor">{{ entry.Conductor }}, conductor</p>
+						 {% endif %}
+
+						 {% if entry.Event == null %}
+						 {% else %}
+						 		<p class="event">{{ entry.Event }}</p>
+						 {% endif %}
+
+						 <div class="address">
+							 <p>{{ entry.Venue }}</p>
+
+							 {% if entry.Street == null %}
+							 {% else %}
+							 	 <p>{{ entry.Street }}</p>
+							 {% endif %}
+
+							 <p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
+						 </div>
+
+						 {% if entry.Time == null %}
+						 {% else %}
+						 		<p class="time">{{ entry.Time }}</p>
+						 {% endif %}
+
+						 {% if entry.Price == null %}
+						 {% else %}
+						 		<p class="price">{{ entry.Price }}</p>
+						 {% endif %}
+
+						 {% if entry.Repertoire == null %}
+						 		<p class="composition">{{ entry.Composition }}</p>
+						 {% else %}
+						 		<p class="price">{{ entry.Price }}</p>
+						 {% endif %}
+
+				 	 </div><!-- /.details -->
+
+				 </div><!-- /.row hidden at extra small -->
+
+
+
+			</div><!-- /.performance -->
+		{% endif %}
+	{% endfor %}
+</div> <!-- /.performance-list -->
