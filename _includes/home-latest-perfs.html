@@ -13,15 +13,15 @@
 				<div class="row">
 
 					 {% if entry.Image == null %}
-					 <div class="col-xs-4">
+					 <div class="col-xs-3">
 					 </div>
 					 {% else %}
-					   <div class="col-xs-4">
+					   <div class="col-xs-3">
 							 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
 						 </div>
 					 {% endif %}
 
-				 	 <div class="details col-xs-8">
+				 	 <div class="details col-xs-9">
 						 <p class="date font-weight-bold">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</p>
 
 						 {% if entry.Conductor == null %}
@@ -64,11 +64,7 @@
 						 {% endif %}
 
 				 	 </div><!-- /.details -->
-
 				 </div><!-- /.row hidden at extra small -->
-
-
-
 			</div><!-- /.performance -->
 		{% endif %}
 	{% endfor %}
