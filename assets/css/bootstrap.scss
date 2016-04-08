@@ -115,6 +115,31 @@ $btn-border-radius-sm:           0rem;
 @import "utilities-responsive";
 
 /*
+* Global elements
+*/
+body a {
+  color: $black;
+  border-bottom: 1px solid $gray-lighter;
+}
+body nav a,
+body a.more,
+body a.mejs-horizontal-volume-slider {
+  border-bottom: 0px solid $gray-lighter;
+}
+::selection {
+  background: $brand-success; // #ff4136;
+  color: #fafcf9;
+  text-shadow: none
+}
+hr {
+  width: 100px;
+  height: 1px;
+  margin: 2rem auto;
+  background-color: $gray-lighterer;
+  border: 0;
+}
+
+/*
  * Navigation
  */
 .navbar .nav-item {
@@ -122,7 +147,6 @@ $btn-border-radius-sm:           0rem;
   float: none;
   line-height: 1.75;
 }
-
 @include media-breakpoint-up(md) {
   .justified {
     margin: 0rem auto;
@@ -135,7 +159,6 @@ $btn-border-radius-sm:           0rem;
     float: left;
   }
 }
-
 .navbar .container {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -183,7 +206,7 @@ a.nav-link:focus {
  * PAGE
  */
 .page {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 /*
@@ -227,22 +250,18 @@ a.nav-link:focus {
   margin-top: 1.5rem;
 }
 
-body a {
-  color: $black;
-  border-bottom: 1px solid $gray-lighter;
-}
-
-body nav a,
-body a.more,
-body a.mejs-horizontal-volume-slider {
-  border-bottom: 0px solid $gray-lighter;
-}
-
 /*
  * HOME
  */
 .home-header img {
   max-width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.latest {
+  font-size: 0.75rem;
+}
+.featured-works {
   margin-bottom: 2rem;
 }
 
@@ -257,7 +276,6 @@ body a.mejs-horizontal-volume-slider {
     max-width: 75%;
   }
 }
-
 @include media-breakpoint-up(lg) {
   .headshot img {
     max-width: 100%;
@@ -278,7 +296,7 @@ body a.mejs-horizontal-volume-slider {
 .recording p {
   margin-bottom: 0.25rem;
 }
-.composer{
+.composer {
   color: $brand-primary;
 }
 .recording .work {
@@ -297,7 +315,8 @@ body a.mejs-horizontal-volume-slider {
 .latest .performance {
   margin-bottom: 1rem;
 }
-.performance img, .latest img {
+.performance img,
+.latest img {
   max-width: 100%;
   max-height: 100%;
   margin-bottom: 1rem;
@@ -305,7 +324,6 @@ body a.mejs-horizontal-volume-slider {
 .performance p {
   margin: 0rem;
 }
-
 .composition {
   font-style: italic;
   padding-top: 0.75rem;
@@ -318,7 +336,7 @@ body a.mejs-horizontal-volume-slider {
 /*
  * MUSIC
  */
- .filters {
+.filters {
    margin-bottom: 1rem;
  }
 .title {
@@ -346,9 +364,7 @@ p.instrumentation {
 .work {
   margin-bottom: $spacer;
 }
-// .listen {
-//   margin: $spacer 0rem;
-// }
+
 
 /*
  * MIXITUP STYLING FOR WORKS AND PERFS
@@ -359,12 +375,11 @@ p.instrumentation {
 .mixitup-event .performance {
 	display: none;
 }
-
-.btn-default:active, .btn-default.active {
+.btn-default:active,
+.btn-default.active {
 	background-color: $brand-primary;
 	color: $white;
 }
-
 .btn-sm {
   margin-bottom: 0.5rem;
 }
@@ -375,54 +390,27 @@ p.instrumentation {
 .hidden {
   display: none;
 }
-
 #links {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    padding-top: 10px;
-    list-style: none;
-    text-align: center;
-    z-index: 99999;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  padding-top: 10px;
+  list-style: none;
+  text-align: center;
+  z-index: 99999;
 }
-
 #links li {
-    display: inline;
-    padding: 0 5px;
+  display: inline;
+  padding: 0 5px;
 }
-
 #links li label {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.7);
-    cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
-
 #links li.active label {
-    background-color: $brand-primary;
-}
-
-
-hr {
-  width: 100px;
-  height: 1px;
-  margin: 2rem auto;
-  background-color: $gray-lighterer;
-  border: 0;
-}
-
-::selection {
-  background: $brand-success; // #ff4136;
-  color: #fafcf9;
-  text-shadow: none
-}
-
-.latest {
-  font-size: 0.75rem;
-}
-
-.featured-works {
-  margin-bottom: 2rem;
+  background-color: $brand-success;
 }

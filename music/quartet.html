@@ -3,7 +3,7 @@ layout: music
 title: Quartet
 ---
 
-{% assign work = "quartet" %}
+{% assign work = "Quartet" %}
 
 {% for entry in site.data.works %}
   {% if entry.Work == work %}
@@ -15,7 +15,8 @@ title: Quartet
 
           {% include music-title.html %}
 
-          {% include music-audio.html %}
+          {% include music-audio.html file="quartet-ex1" name="Excerpt 1" %}
+          {% include music-audio.html file="quartet-ex2" name="Excerpt 2" %}
 
           {% include music-program-notes.html %}
 
@@ -29,7 +30,8 @@ title: Quartet
 
         {% include music-title.html %}
 
-        {% include music-audio.html %}
+        {% include music-audio.html file="quartet-ex1" name="Excerpt 1" %}
+        {% include music-audio.html file="quartet-ex2" name="Excerpt 2" %}
 
         {% include music-program-notes.html %}
 
