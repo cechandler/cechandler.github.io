@@ -429,3 +429,7 @@ p.instrumentation {
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
   background: $brand-success !important;
 }
+.mejs-container,
+.mejs-container .mejs-controls {
+  background: $gray-dark;
+}
