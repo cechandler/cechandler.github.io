@@ -4664,7 +4664,8 @@ body a {
 
 body nav a,
 body a.more,
-body a.mejs-horizontal-volume-slider {
+body a.mejs-horizontal-volume-slider,
+body a.fancybox-close {
   border-bottom: 0px solid #aab0b5; }
 
 hr {
@@ -4934,3 +4935,7 @@ p.instrumentation {
 
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
   background: #5cb85c !important; }
+
+.mejs-container,
+.mejs-container .mejs-controls {
+  background: #373a3c; }
