@@ -419,7 +419,11 @@ p.instrumentation {
   background-color: $brand-success;
 }
 
-::selection,
+::selection {
+  background: $brand-success; // #ff4136;
+  color: #fafcf9;
+  text-shadow: none
+}
 ::-moz-selection {
   background: $brand-success; // #ff4136;
   color: #fafcf9;
