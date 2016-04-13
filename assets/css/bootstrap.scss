@@ -18,7 +18,7 @@ $gray-lighterer:            #eceeef;
 $gray-lightest:             #f7f7f9;
 $white:                     #fff;
 
-$brand-primary:             #0275d8; // #013ADF; // #313042; //
+$brand-primary:             #0275d8; // #013ADF; // #313042;
 $brand-secondary:           #5bc0de;
 $brand-success:             #5cb85c;
 $brand-info:                #5bc0de;
@@ -419,7 +419,8 @@ p.instrumentation {
   background-color: $brand-success;
 }
 
-::selection {
+::selection,
+::-moz-selection {
   background: $brand-success; // #ff4136;
   color: #fafcf9;
   text-shadow: none
