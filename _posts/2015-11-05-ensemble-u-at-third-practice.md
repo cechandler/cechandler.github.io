@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Ensemble U: Premieres *Recast Fragments*'
+title: 'Ensemble U: Premieres Recast Fragments'
 author: Chris
 categories: news
 tags:

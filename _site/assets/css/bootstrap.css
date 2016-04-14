@@ -4933,6 +4933,11 @@ p.instrumentation {
   color: #fafcf9;
   text-shadow: none; }
 
+::-moz-selection {
+  background: #5cb85c;
+  color: #fafcf9;
+  text-shadow: none; }
+
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
   background: #5cb85c !important; }
 
