@@ -1,42 +1,72 @@
+<h3>Performances</h3>
 <div class="perf-list">
-  {% for entry in site.data.performances %}
-    {% if entry.Composition == work %}
-      <h3>Performances</h3>
-      {% break %}
+	<!-- liquid capture stores variable -->
+	<!-- %s filter is a unix timestamp to compare current time with performance date for upcoming class -->
+	{% for entry in site.data.performances %}
+		{% if entry.Composition == work %}
+			{% capture time_now %}{{ 'now' | date: "%s" }}{% endcapture %}
+			{% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
+			{% capture perf_date %}{{ full_date | date: '%s' }}{% endcapture %}
+
+			<div class="performance {{ entry.Year }} {% if perf_date > time_now %} upcoming {% endif %}">
+
+				<div class="row">
+
+					 {% if entry.Image == null %}
+					 <div class="col-xs-3">
+					 </div>
+					 {% else %}
+					   <div class="col-xs-3">
+							 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
+						 </div>
+					 {% endif %}
+
+				 	 <div class="details col-xs-9">
+						 <p class="date font-weight-bold">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</p>
+
+						 {% if entry.Conductor == null %}
+						 	 <p class="performer">{{ entry.Performers }}</p>
+						 {% else %}
+							 <p class="performer">{{ entry.Performers }}</p>
+							 <p class="conductor">{{ entry.Conductor }}, conductor</p>
+						 {% endif %}
+
+						 {% if entry.Event == null %}
+						 {% else %}
+						 		<p class="event">{{ entry.Event }}</p>
+						 {% endif %}
+
+						 <div class="address">
+							 <p>{{ entry.Venue }}</p>
+
+							 {% if entry.Street == null %}
+							 {% else %}
+							 	 <p>{{ entry.Street }}</p>
+							 {% endif %}
+
+							 <p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
+						 </div>
+
+						 {% if entry.Time == null %}
+						 {% else %}
+						 		<p class="time">{{ entry.Time }}</p>
+						 {% endif %}
+
+						 {% if entry.Price == null %}
+						 {% else %}
+						 		<p class="price">{{ entry.Price }}</p>
+						 {% endif %}
+
+						 {% if entry.Repertoire == null %}
+						 		<p class="composition">{{ entry.Composition }}</p>
+						 {% else %}
+						 		<p class="price">{{ entry.Price }}</p>
+						 {% endif %}
+
+				 	 </div><!-- /.details -->
+				 </div><!-- /.row hidden at extra small -->
+			</div><!-- /.performance -->
+    {% else %}
     {% endif %}
-  {% endfor %}
-
-  {% for entry in site.data.performances %}
-    {% if entry.Composition == work %}
-      <div class="perf">
-
-        {% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
-
-        <h5 class="date">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</h5>
-
-        {% if entry.Conductor == null %}
-         <p class="performer">{{ entry.Performers }}</p>
-        {% else %}
-         <p class="performer">{{ entry.Performers }}</p>
-         <p class="conductor">{{ entry.Conductor }}, conductor</p>
-        {% endif %}
-
-        {% if entry.Event == null %}
-        {% else %}
-          <p class="event">{{ entry.Event }}</p>
-        {% endif %}
-
-        <div class="address">
-          <p>{{ entry.Venue }}</p>
-
-          {% if entry.Street == null %}
-          {% else %}
-            <p>{{ entry.Street }}</p>
-          {% endif %}
-
-          <p>{{ entry.City }}, {{ entry.State }}</p>
-        </div>
-      </div>
-      {% endif %}
-    {% endfor %}
-  </div>
+	{% endfor %}
+</div> <!-- /.performance-list -->
