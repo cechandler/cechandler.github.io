@@ -1,7 +1,7 @@
 <div class="latest performance-list">
 	<!-- liquid capture stores variable -->
 	<!-- %s filter is a unix timestamp to compare current time with performance date for upcoming class -->
-	{% for entry in site.data.performances limit:6 %}
+	{% for entry in site.data.performances limit:7 %}
 		{% if entry.Composition == null %}
 		{% else %}
 			{% capture time_now %}{{ 'now' | date: "%s" }}{% endcapture %}
