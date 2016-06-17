@@ -1,2 +1,9 @@
 # not using plugins so don't push local build
 _site/
+
+# ignore vim and locked files
+.~lock*
+*.un~
+Session.vim
+.netrwhist
+*~
