@@ -1,0 +1,56 @@
+---
+layout: music
+title: the view from here
+---
+
+{% assign work = "the view from here" %}
+
+{% for entry in site.data.works %}
+  {% if entry.Work == work %}
+
+    {% if entry.Score == null %}
+
+      <div class="row work">
+        <div class="col-md-12">
+
+            {% include music-title.html %}
+
+            <div class="alert alert-info" role="alert">
+                Recordings coming soon!
+            </div>
+
+            {% include music-program-notes.html %}
+
+        </div>
+      </div>
+
+    {% else %}
+
+    <div class="row work">
+      <div class="col-md-7">
+
+        {% include music-title.html %}
+
+        <div class="alert alert-info" role="alert">
+            Recordings coming soon!
+        </div>
+
+        {% include music-program-notes.html %}
+
+      </div>
+
+      <div class="col-md-5">
+
+        {% include music-score.html %}
+
+      </div>
+
+    </div>
+
+    {% endif %}
+
+    {% include music-perf-list.html %}
+
+  {% else %}
+  {% endif %}
+{% endfor %}
