@@ -1,10 +1,10 @@
 R,Sel,Date,Month,Day,Year,Composition,Composed,Event,Venue,Street,City,State,ZIP,Performers,Conductor,Image,Notes,Extra
 ,,2017,,,,,,,,,,,,,,,,
-,,03/31/17,3,31,2017,Smoke and Mirrors,2013,SCI National Conference,Western Michigan University,,Kalamazoo,MI,,Ensemble Dal Niente,,dal-niente.jpg,,
+,,03/31/17,3,31,2017,Smoke and Mirrors,2013,SCI National Conference,Western Michigan University,,Kalamazoo,MI,,Ensemble Dal Niente,,dalniente.jpg,,
 ,,2016,,,,,,,,,,,,,,,,
 ,,11/11/16,11,11,2016,"in shadow, in shade",2012,Electroacoustic Barn Dance,University of Mary Washington,,Fredericksburg,VA,,"Keith Kirchoff, piano",,keithkirchoff.jpg,,
 ,,11/04/16,11,4,2016,"in shadow, in shade",2012,Third Practice Electroacoustic Music Festival,Camp Concert Hall,"Booker Hall of Music, 28 Westhampton Way",Richmond,VA,23173,"Wei-Han Wu, piano",,wei-han.jpg,,
-,,9/12/16,9,12,2016,Smoke and Mirrors,2013,ICMC 2016,"TivoliVredenburg, Hertz",Vlaamse Toren 7 ,Utrecht,NL,,Modelo62,,icmc2016.png,,
+,,9/12/16,9,12,2016,Smoke and Mirrors,2013,ICMC 2016,"TivoliVredenburg, Hertz",Vlaamse Toren 7,Utrecht,NL,,Modelo62,,icmc2016.png,,
 ,,6/18/16,6,18,2016,the view from here,2016,Music in the American Wild Tour,"Byrd Visitor Center, Shenandoah National Park",Skyline Drive Milepost 51,Stanley,VA,22851,Music in the American Wild Ensemble,,mitaw.jpg,,
 ,,6/17/16,6,17,2016,the view from here,2016,Music in the American Wild Tour,The Theatre,291 Gay Street,Washington,VA,22747,Music in the American Wild Ensemble,,mitaw.jpg,,
 ,,6/14/16,6,14,2016,the view from here,2016,Music in the American Wild Tour,"Top of Purchase Knob, Great Smoky Mountains National Park",107 Purchase Rd,Waynesville,TN,28785,Music in the American Wild Ensemble,,mitaw2.jpg,,
@@ -46,7 +46,7 @@ Y,,8/19/13,8,19,2013,the resonance after...,2008,Domaine Forget,Salle Fran̤oys-
 Y,,4/20/13,4,20,2013,Smoke and Mirrors,2013,SEAMUS 2013,Central Presbyterian Church,,St. Paul,MN,,Ensemble 61,,,,
 Y,,4/3/13,4,3,2013,a thing of dream and mist,2011,New York City Electroacoustic Music Festival,Elebash Hall,,New York City,NY,,"Zach Herchen, soprano saxophone",,zachherchen.jpg,,
 Y,,3/29/13,3,29,2013,deep in liquid indigo,2012,Ossia New Music Concert,Kilbourn Hall,,Rochester,NY,,Ossia New Music Ensemble,Jerry Hou,jerryhou.jpg,,
-Y,,2/1/13,2,1,2013,a thing of dream and mist,2011,Florida State New Music Festival,Opperman Music Hall,,Tallahassee ,FL,,"Scotty Phillips, soprano saxophone",,scottyphillips.jpg,,
+Y,,2/1/13,2,1,2013,a thing of dream and mist,2011,Florida State New Music Festival,Opperman Music Hall,,Tallahassee,FL,,"Scotty Phillips, soprano saxophone",,scottyphillips.jpg,,
 ,,2012,,,,,,,,,,,,,,,,
 Y,,11/3/12,11,3,2012,"in shadow, in shade",2012,Third Practice Electroacoustic Music Festival,Camp Concert Hall,,Richmond,VA,,"Keith Kirchoff, piano",,keithkirchoff.jpg,,
 N,,8/2/12,8,2,2012,Three Introductions,2012,American Conservatory Composers' Concert,Fontainebleau,,Fontainebleau,FR,,American Conservatory Students,,,,"Chelsea Starbuck Smith, violin; Lucie Granger, cello; Siyi Fang, piano"
@@ -60,7 +60,7 @@ N,,3/3/12,3,3,2012,through a glass darkly,2011,Color Field Ensemble Winter Tour,
 Y,,2/9/12,2,9,2012,the resonance after...,2008,SEAMUS 2012,Lawrence University Chapel,,Appleton,WI,,Lawrence University Ensemble,Dylan C-Moore,,,
 ,,2011,,,,,,,,,,,,,,,,
 N,,11/9/11,11,9,2011,Homage Fragment,2011,ADJ-ective New Music Concert,St. Mark's Episcopal Church,,Toledo,OH,,ADJ Trio,,,"Andrew Martin Smith, clarinet; Jamie Leigh Sampson, bassoon; Sipkje Pesnichak, oboe","Andrew Martin Smith, clarinet; Jamie Leigh Sampson, bassoon; Sipkje Pesnichak, oboe"
-Y,,11/4/11,11,4,2011,a thing of dream and mist,2011,Third Practice Electroacoustic Music Festival,Camp Concert Hall ,,Richmond,VA,,"Zach Herchen, soprano saxophone",,zachherchen.jpg,,
+Y,,11/4/11,11,4,2011,a thing of dream and mist,2011,Third Practice Electroacoustic Music Festival,Camp Concert Hall,,Richmond,VA,,"Zach Herchen, soprano saxophone",,zachherchen.jpg,,
 N,,10/13/11,10,13,2011,the resonance after...,2008,Eastman Composers' Forum,Kilbourn Hall,,Rochester,NY,,Eastman Chamber Ensemble,Jason Thorpe Buchanan,,"Sarah Winstein-Hibbs, flute; Madison Greenstone, clarinet/bass clarinet; Molly Werts, violin; Samuel Pierce-Ruhland, cello; Emily Park, percussion; Ada Jeon, piano","Sarah Winstein-Hibbs, flute; Madison Greenstone, clarinet/bass clarinet; Molly Werts, violin; Samuel Pierce-Ruhland, cello; Emily Park, percussion; Ada Jeon, piano"
 Y,S,5/9/11,5,9,2011,Shifts,2010,Young and Emerging Composer Series,The Music Settlement,,Cleveland,OH,,Cleveland Chamber Symphony,Steven Smith,ccsverb.jpg,,
 Y,,1/20/11,1,20,2011,The Spark of Opposites,2009,SEAMUS 2011,Victor E. Clarke Recital Hall,,Coral Gables,FL,,"Madeleine Shapiro, cello",,madeleineshapiro.jpg,,
