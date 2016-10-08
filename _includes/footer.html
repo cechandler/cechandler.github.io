@@ -44,7 +44,9 @@
     <script src="/assets/js/mediaelement-and-player.min.js"></script>
     <script src="/assets/js/audio.js"></script>
 
+    {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
+    {% endif %}
 
   </div>
 </footer>
