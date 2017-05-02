@@ -17,10 +17,10 @@ markdown: kramdown
 navigation:
  - title: Home
    url: /index.html
- - title: News
-   url: /news/
  - title: About
    url: /about/
+ - title: News
+   url: /news/
  - title: Music
    url: /music/
  - title: Recordings
