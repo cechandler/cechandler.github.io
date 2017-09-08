@@ -17,6 +17,6 @@ Megan Arns & Connor Stevens, percussionists
 Andrea Venet & Drew Worden, microphonists  
 Jason Thorpe Buchanan & Christopher Chandler, sound projectionists
 
-<div class="text-xs-center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/8hw8AIKz1LE" frameborder="0" allowfullscreen></iframe>
+<div class="text-center">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8hw8AIKz1LE" allowfullscreen></iframe>
 </div>

@@ -8,21 +8,20 @@
 			{% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
 			{% capture perf_date %}{{ full_date | date: '%s' }}{% endcapture %}
 
-			{% if perf_date > time_now %}
-				<div class="performance {{ entry.Year }} upcoming">
+				<div class="performance {{ entry.Year }} {% if perf_date > time_now %}upcoming {% else %}past {% endif %}">
 
 					<div class="row">
 
 						 {% if entry.Image == null %}
-						 <div class="col-xs-3">
+						 <div class="col-3">
 						 </div>
 						 {% else %}
-						   <div class="col-xs-3">
-								 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
+						   <div class="col-3">
+								 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" class="img-fluid" alt="image"/>
 							 </div>
 						 {% endif %}
 
-					 	 <div class="details col-xs-9">
+					 	 <div class="details col-9">
 							 <p class="date font-weight-bold">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</p>
 
 							 {% if entry.Conductor == null %}
@@ -38,37 +37,15 @@
 							 {% endif %}
 
 							 <div class="address">
-								 <p>{{ entry.Venue }}</p>
-
-								 {% if entry.Street == null %}
-								 {% else %}
-								 	 <p>{{ entry.Street }}</p>
-								 {% endif %}
-
 								 <p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
 							 </div>
 
-							 {% if entry.Time == null %}
-							 {% else %}
-							 		<p class="time">{{ entry.Time }}</p>
-							 {% endif %}
-
-							 {% if entry.Price == null %}
-							 {% else %}
-							 		<p class="price">{{ entry.Price }}</p>
-							 {% endif %}
-
-							 {% if entry.Repertoire == null %}
-							 		<p class="composition">{{ entry.Composition }}</p>
-							 {% else %}
-							 		<p class="price">{{ entry.Price }}</p>
-							 {% endif %}
+						 		<p class="composition">{{ entry.Composition }}</p>
 
 					 	 </div><!-- /.details -->
-					 </div><!-- /.row hidden at extra small -->
+					 </div><!-- /.row -->
 				</div><!-- /.performance -->
-			{% else %}
-			{% endif %}
+
 		{% endif %}
 	{% endfor %}
 </div> <!-- /.performance-list -->

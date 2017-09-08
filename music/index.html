@@ -4,80 +4,46 @@ title: Music
 ---
 
 <div class="row">
-	<div class="filters col-md-4 col-md-push-8 hidden-sm-down">
+	<div class="filters col-5 col-sm-5 col-md-3 order-1 order-sm-1 order-md-2 text-center text-md-left">
 		<h5>Instrumentation:</h5>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter="all">
 			All
 		</button>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter=".large">
 			Large Ensemble
 		</button>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter=".chamber">
 			Chamber Ensemble
 		</button>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter=".electroacoustic">
 			Electroacoustic
 		</button>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter=".solo">
 			Solo
 		</button>
 	</div>
 
-	<div class="filters col-sm-12 hidden-md-up">
-		<h5>Instrumentation:</h5>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter="all">
-			All
-		</button>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter=".large">
-			Large Ensemble
-		</button>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter=".chamber">
-			Chamber Ensemble
-		</button>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter=".electroacoustic">
-			Electroacoustic
-		</button>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter=".solo">
-			Solo
-		</button>
-	</div>
-
-	<div class="mixitup-music works-list col-md-8 col-md-pull-4 col-xs-12">
+	<div class="mixitup-music works-list col-12 col-md-9 order-2 order-sm-2 order-md-1 text-center text-md-left">
 		{% for entry in site.data.works %}
 			{% if entry.Work == null %}
 			{% elsif entry.Special == "E" %}
 			{% else %}
-			<div class="row work {{ entry.Type }}">
+			<div class="pb-3 work {{ entry.Type }}">
 				 <div class="col-xs-12 info">
 					{% if entry.Link == null %}
 						<span class="title">{{ entry.Work }}</span>

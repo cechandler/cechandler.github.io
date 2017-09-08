@@ -15,6 +15,6 @@ The Switch~ Ensemble performed on the Eastman Computer Music Center's fall conce
   <div class="col-md-6 col-sm-12"><img src="{{site.baseurl}}/assets/img/switch-with-leroux.jpg" alt="Switch with Leroux" width="100%" height="100%" border="" align="" /></div>
 </div>
 
-<div class="text-xs-center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/H0YE5RGodfk" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9 text-center">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/H0YE5RGodfk" allowfullscreen></iframe>
 </div>

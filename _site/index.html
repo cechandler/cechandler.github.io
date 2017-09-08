@@ -12,7 +12,7 @@
   <meta name="author" content="">
   <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-  <title>CEC | Composer</title>
+  <title>Home</title>
 
   <!-- Bootstrap core CSS -->
   <link href="/assets/css/bootstrap.css" rel="stylesheet">
@@ -26,7 +26,7 @@
   <!-- Google Fonts -->
   <!-- Alternate heading family font: Source Sans Pro:400,300,300italic,400italic -->
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,700' rel='stylesheet' type='text/css'>
 
   <!-- fancyBox -->
   <link rel="stylesheet" href="/assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
@@ -44,15 +44,16 @@
 
 </header>
 
-    <nav class="navbar navbar-fixed-top">
-  <button class="navbar-toggler navbar-toggler-right navbar-toggleable-md hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
-  </button>
+    <nav class="navbar navbar-expand-lg fixed-top">
 
   <a class="navbar-brand" href="#">Christopher Chandler | composer</a>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
   <div class="collapse navbar-collapse" id="navbar-header">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto flex-column flex-lg-row">
       
         
         
@@ -106,93 +107,243 @@
   </div>
 </nav>
 
-<!-- <nav class="navbar navbar-static-top">
-  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header">
-    <i class="fa fa-bars"></i>
-  </button>
-  <div class="collapse navbar-toggleable-sm" id="navbar-header">
-    <div class="container">
-      <ul class="nav navbar-nav justified">
-        
-          
-          
-
-          <li class="nav-item first  ">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/news/">News</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/music/">Music</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/recordings/">Recordings</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   last">
-            <a class="nav-link" href="/performances/">Performances</a>
-          </li>
-
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
--->
-
     
     <div class="wrapper">
       <div class="container">
 
-        <article class="page">
-  <div class="home row">
+        <article class="page pt-3">
 
-    <div class="post-list col-md-12">
+  <header class="page-header">
+    <h1 class="mb-3 text-center">Home</h1>
+  </header>
 
-        <div class="row">
-          <div class="col-xs-12 home-header text-xs-center">
-            <!-- <img src="/assets/img/dili-ossia-cropped.jpg" alt=""> -->
-            <img src="/assets/img/chris-chandler-headshot-woods.jpg" alt="Headshot" width="75%" height="75%">
-          </div>
-        </div>
+  <div class="page-content">
+    <article class="home page">
+  <div class="row">
 
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-sm-push-6">
-            <h4>Featured Works</h4>
-            <div class="latest featured-works">
+    <div class="col-12 mb-4">
+      <img src="/assets/img/chris-chandler-headshot-woods.jpg" class="img-fluid" alt="Headshot">
+    </div>
+
+      <div class="col-12 col-sm-6 order-2 order-sm-1 order-md-1">
+        <h4>Recent and Upcoming Events</h4>
+
+        <div class="latest performance-list">
+	<!-- liquid capture stores variable -->
+	<!-- %s filter is a unix timestamp to compare current time with performance date for upcoming class -->
+	
+		
+		
+	
+		
+			
+			
+			
+
+				<div class="performance 2017 past ">
+
+					<div class="row">
+
+						 
+						   <div class="col-3">
+								 <img src="/assets/img/dalniente.jpg" class="img-fluid" alt="image"/>
+							 </div>
+						 
+
+					 	 <div class="details col-9">
+							 <p class="date font-weight-bold">March 31, 2017</p>
+
+							 
+							 	 <p class="performer">Ensemble Dal Niente</p>
+							 
+
+							 
+							 		<p class="event">SCI National Conference</p>
+							 
+
+							 <div class="address">
+								 <p>Kalamazoo, MI</p>
+							 </div>
+
+						 		<p class="composition">Smoke and Mirrors</p>
+
+					 	 </div><!-- /.details -->
+					 </div><!-- /.row -->
+				</div><!-- /.performance -->
+
+		
+	
+		
+		
+	
+		
+			
+			
+			
+
+				<div class="performance 2016 past ">
+
+					<div class="row">
+
+						 
+						   <div class="col-3">
+								 <img src="/assets/img/keithkirchoff.jpg" class="img-fluid" alt="image"/>
+							 </div>
+						 
+
+					 	 <div class="details col-9">
+							 <p class="date font-weight-bold">November 11, 2016</p>
+
+							 
+							 	 <p class="performer">Keith Kirchoff, piano</p>
+							 
+
+							 
+							 		<p class="event">Electroacoustic Barn Dance</p>
+							 
+
+							 <div class="address">
+								 <p>Fredericksburg, VA</p>
+							 </div>
+
+						 		<p class="composition">in shadow, in shade</p>
+
+					 	 </div><!-- /.details -->
+					 </div><!-- /.row -->
+				</div><!-- /.performance -->
+
+		
+	
+		
+			
+			
+			
+
+				<div class="performance 2016 past ">
+
+					<div class="row">
+
+						 
+						   <div class="col-3">
+								 <img src="/assets/img/wei-han.jpg" class="img-fluid" alt="image"/>
+							 </div>
+						 
+
+					 	 <div class="details col-9">
+							 <p class="date font-weight-bold">November 4, 2016</p>
+
+							 
+							 	 <p class="performer">Wei-Han Wu, piano</p>
+							 
+
+							 
+							 		<p class="event">Third Practice Electroacoustic Music Festival</p>
+							 
+
+							 <div class="address">
+								 <p>Richmond, VA</p>
+							 </div>
+
+						 		<p class="composition">in shadow, in shade</p>
+
+					 	 </div><!-- /.details -->
+					 </div><!-- /.row -->
+				</div><!-- /.performance -->
+
+		
+	
+		
+			
+			
+			
+
+				<div class="performance 2016 past ">
+
+					<div class="row">
+
+						 
+						   <div class="col-3">
+								 <img src="/assets/img/icmc2016.png" class="img-fluid" alt="image"/>
+							 </div>
+						 
+
+					 	 <div class="details col-9">
+							 <p class="date font-weight-bold">September 12, 2016</p>
+
+							 
+							 	 <p class="performer">Modelo62</p>
+							 
+
+							 
+							 		<p class="event">ICMC 2016</p>
+							 
+
+							 <div class="address">
+								 <p>Utrecht, NL</p>
+							 </div>
+
+						 		<p class="composition">Smoke and Mirrors</p>
+
+					 	 </div><!-- /.details -->
+					 </div><!-- /.row -->
+				</div><!-- /.performance -->
+
+		
+	
+		
+			
+			
+			
+
+				<div class="performance 2016 past ">
+
+					<div class="row">
+
+						 
+						   <div class="col-3">
+								 <img src="/assets/img/mitaw.jpg" class="img-fluid" alt="image"/>
+							 </div>
+						 
+
+					 	 <div class="details col-9">
+							 <p class="date font-weight-bold">August 17, 2016</p>
+
+							 
+							 	 <p class="performer">American Wild Ensemble</p>
+							 
+
+							 
+							 		<p class="event">Music in the American Wild Western Tour</p>
+							 
+
+							 <div class="address">
+								 <p>Forks, WA</p>
+							 </div>
+
+						 		<p class="composition">the view from here</p>
+
+					 	 </div><!-- /.details -->
+					 </div><!-- /.row -->
+				</div><!-- /.performance -->
+
+		
+	
+</div> <!-- /.performance-list -->
+
+
+        <a href="/performances/" class="more">
+          <button type="button" class="btn btn-outline-secondary">More Events</button>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 order-1 order-sm-2 order-md-2 mb-4">
+        <h4>Selected Works</h4>
+
+        <div class="latest selected-works">
   
     
       
-        <div class="row work chamber">
+        <div class="work chamber">
            <div class="col-xs-12 info">
             
               <span class="title"><a href="/music/the-view-from-here.html">the view from here</a></span>
@@ -214,7 +365,7 @@
   
     
       
-        <div class="row work large">
+        <div class="work large">
            <div class="col-xs-12 info">
             
               <span class="title"><a href="/music/smoke-and-mirrors-ii.html">Smoke and Mirrors II</a></span>
@@ -228,7 +379,7 @@
   
     
       
-        <div class="row work chamber electroacoustic">
+        <div class="work chamber electroacoustic">
            <div class="col-xs-12 info">
             
               <span class="title"><a href="/music/smoke-and-mirrors.html">Smoke and Mirrors</a></span>
@@ -242,7 +393,7 @@
   
     
       
-        <div class="row work chamber">
+        <div class="work chamber">
            <div class="col-xs-12 info">
             
               <span class="title"><a href="/music/deep-in-liquid-indigo.html">deep in liquid indigo</a></span>
@@ -264,7 +415,7 @@
   
     
       
-        <div class="row work electroacoustic solo">
+        <div class="work electroacoustic solo">
            <div class="col-xs-12 info">
             
               <span class="title"><a href="/music/a-thing-of-dream-and-mist.html">a thing of dream and mist</a></span>
@@ -296,7 +447,7 @@
   
     
       
-        <div class="row work chamber">
+        <div class="work chamber">
            <div class="col-xs-12 info">
             
               <span class="title"><a href="/music/the-resonance-after.html">the resonance after...</a></span>
@@ -320,85 +471,19 @@
     
     
   
-</div><!-- /.featured-works -->
+</div><!-- /.selected-works -->
 
-          </div>
-          <div class="col-xs-12 col-sm-6 col-sm-pull-6">
-            <h4>Upcoming Events</h4>
-            <div class="latest performance-list">
-	<!-- liquid capture stores variable -->
-	<!-- %s filter is a unix timestamp to compare current time with performance date for upcoming class -->
-	
-		
-		
-	
-		
-			
-			
-			
 
-			
-			
-		
-	
-		
-		
-	
-		
-			
-			
-			
+        <a href="/music/" class="more">
+          <button type="button" class="btn btn-outline-secondary">More Music</button>
+        </a>
+      </div>
 
-			
-			
-		
-	
-		
-			
-			
-			
+  </div><!-- ./row -->
+</article>
 
-			
-			
-		
-	
-		
-			
-			
-			
+  </div>
 
-			
-			
-		
-	
-		
-			
-			
-			
-
-			
-			
-		
-	
-</div> <!-- /.performance-list -->
-
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-sm-push-6">
-            <a href="/music/" class="more">
-            	<button type="button" class="btn btn-secondary-outline btn-sm">More Music</button>
-            </a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-sm-pull-6">
-            <a href="/performances/" class="more">
-            	<button type="button" class="btn btn-secondary-outline btn-sm">More Events</button>
-            </a>
-          </div>
-        </div>
-
-  </div><!-- ./home-row -->
 </article>
 
 
@@ -406,7 +491,7 @@
     </div><!-- /.wrapper -->
 
     <footer class="site-footer">
-  <div class="text-xs-center contact">
+  <div class="text-center mt-4 mb-4">
     <h5>Contact</h5>
     <script>
       var eml = 'chr' + 'isto' + 'phe' + 'r.e.' + 'chan' + 'dle' + 'r@' + 'g' + 'ma' + 'il' + '.c' +'om';

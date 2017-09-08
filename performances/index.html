@@ -6,16 +6,16 @@ title: Performances
 <!-- capture current year and store in variable -->
 {% capture current_year %}{{ site.time | date: '%Y' }}{% endcapture %}
 
-<div class="year-btn">
+<div class="mb-3 text-center">
 	<button
 		type="button"
-		class="btn btn-secondary-outline btn-sm filter-event"
+		class="btn btn-outline-secondary btn-sm filter-event"
 		data-filter=".upcoming">
 		Upcoming
 	</button>
 	<button
 		type="button"
-		class="btn btn-secondary-outline btn-sm filter-event"
+		class="btn btn-outline-secondary btn-sm filter-event"
 		data-filter="all">
 		All
 	</button>
@@ -24,14 +24,13 @@ title: Performances
 	{% for i in (2008..current_year) reversed %}
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm filter-event"
+			class="btn btn-outline-secondary btn-sm filter-event"
 			data-filter=".{{ i }}">
 			{{ i }}
 		</button>
 	{% endfor %}
 
 </div>
-
 
 <div class="mixitup-event performance-list">
 	<!-- liquid capture stores variable -->
@@ -45,18 +44,18 @@ title: Performances
 
 			<div class="performance {{ entry.Year }} {% if perf_date > time_now %} upcoming {% endif %}">
 
-				<div class="row hidden-xs-down">
+				<div class="row">
 
 					 {% if entry.Image == null %}
-					 <div class="col-xs-4 col-md-4">
+					 <div class="col-4">
 					 </div>
 					 {% else %}
-					   <div class="col-xs-4 col-md-4">
+					   <div class="col-4">
 							 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
 						 </div>
 					 {% endif %}
 
-				 	 <div class="details col-xs-8 col-md-8">
+				 	 <div class="details col-8">
 						 <h3 class="date">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</h3>
 						 <h4 class="location">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</h4>
 
@@ -102,65 +101,6 @@ title: Performances
 				 	 </div><!-- /.details -->
 
 				 </div><!-- /.row hidden at extra small -->
-
-				 <div class="row hidden-sm-up">
-
-						{% if entry.Image == null %}
-							<div class="col-xs-6">
-							</div>
-						{% else %}
- 							<div class="col-xs-6">
- 								<img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
- 							</div>
-						{% endif %}
-
-						<div class="col-xs-6">
-							<h3 class="date">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</h3>
-							<h4 class="location">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</h4>
-						</div>
-
-						<div class="details col-xs-12">
-	 						{% if entry.Conductor == null %}
-	 							<p class="performer">{{ entry.Performers }}</p>
-	 						{% else %}
-	 							<p class="performer">{{ entry.Performers }}</p>
-	 							<p class="conductor">{{ entry.Conductor }}, conductor</p>
-	 						{% endif %}
-
-	 						{% if entry.Event == null %}
-	 						{% else %}
-	 							 <p class="event">{{ entry.Event }}</p>
-	 						{% endif %}
-
-	 						<div class="address">
-								<p>{{ entry.Venue }}</p>
-
-	 						 	{% if entry.Street == null %}
-	 						 	{% else %}
-									<p>{{ entry.Street }}</p>
-								{% endif %}
-
-								<p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
-							</div>
-
-	 						{% if entry.Time == null %}
-	 						{% else %}
-	 							 <p class="time">{{ entry.Time }}</p>
-	 						{% endif %}
-
-	 						{% if entry.Price == null %}
-	 						{% else %}
-	 							 <p class="price">{{ entry.Price }}</p>
-	 						{% endif %}
-
-	 						{% if entry.Repertoire == null %}
-	 							 <p class="composition">{{ entry.Composition }}</p>
-	 						{% else %}
-	 							 <p class="price">{{ entry.Price }}</p>
-	 						{% endif %}
-						</div><!-- /.details -->
-
-					</div><!-- /.row hidden at small and up -->
 
 			</div><!-- /.performance -->
 		{% endif %}

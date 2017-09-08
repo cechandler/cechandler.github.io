@@ -1,12 +1,13 @@
-<nav class="navbar navbar-fixed-top">
-  <button class="navbar-toggler navbar-toggler-right navbar-toggleable-md hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
-  </button>
+<nav class="navbar navbar-expand-lg fixed-top">
 
   <a class="navbar-brand" href="#">Christopher Chandler | composer</a>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
   <div class="collapse navbar-collapse" id="navbar-header">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto flex-column flex-lg-row">
       {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.url contains link.url %}
@@ -26,33 +27,3 @@
     </ul>
   </div>
 </nav>
-
-<!-- <nav class="navbar navbar-static-top">
-  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header">
-    <i class="fa fa-bars"></i>
-  </button>
-  <div class="collapse navbar-toggleable-sm" id="navbar-header">
-    <div class="container">
-      <ul class="nav navbar-nav justified">
-        {% for link in site.navigation %}
-          {% assign current = nil %}
-          {% if page.url contains link.url %}
-            {% assign current = 'active' %} switch back to this if sr-only looks weird on mobile
-            {% assign current = "active <span class="sr-only">(current)</span>" %}
-          {% elsif page.url contains "music" and link.url contains "music" %}
-            {% assign current = "active <span class="sr-only">(current)</span>" %}
-          {% elsif page.url contains "news" and link.url contains "news" %}
-            {% assign current = "active <span class="sr-only">(current)</span>" %}
-          {% endif %}
-
-          <li class="nav-item {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-            <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
-          </li>
-
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</nav>
-
--->

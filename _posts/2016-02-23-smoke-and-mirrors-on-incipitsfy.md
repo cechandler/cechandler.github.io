@@ -10,6 +10,6 @@ tags:
 ---
 Check out a brand new score following video of *Smoke and Mirrors* on the YouTube channel *incipitsfy*. Thanks, [Dan](http://www.dantramte.com/)!
 
-<div class="text-xs-center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/a06kThuHSOY" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9 text-center">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a06kThuHSOY" allowfullscreen></iframe>
 </div>

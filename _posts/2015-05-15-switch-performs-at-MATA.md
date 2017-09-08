@@ -19,6 +19,6 @@ Wojtek Blecharz - *Transcryptum* (selections):
 
 Jason Thorpe Buchanan - *Hunger: A Multimedia Opera in Four Parts* (Part III, 2015) for three singers, octet, electronics & video projection  
 
-<div class="text-xs-center">
+<div class="text-center">
   <img src="{{site.baseurl}}/assets/img/switch-mata.jpg" alt="Switch MATA Poster" width="50%" height="50%" border="" align="" />
 </div>

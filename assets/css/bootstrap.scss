@@ -3,8 +3,9 @@
 ---
 
 /*!
- * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -39,7 +40,7 @@ $font-family-sans-serif:    'PT Sans',Helvetica,Arial,sans-serif; //'Source Sans
 $font-family-serif:         'Merriweather',Georgia,"Times New Roman",Times,Baskerville,serif;
 $font-family-base:          $font-family-serif;
 
-$line-height:                1.75;
+$line-height-base:          1.75;
 
 $headings-font-family:      $font-family-sans-serif;
 $headings-font-weight:      bold;
@@ -49,6 +50,10 @@ $headings-color:            inherit;
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
 $btn-primary-border:             $btn-primary-bg;
+
+// $theme-colors: (
+//   secondary: $gray-dark
+// ) !default;
 
 $btn-secondary-color:            $gray-dark;
 $btn-secondary-bg:               #fff;
@@ -63,15 +68,10 @@ $btn-border-radius-lg:           0rem;
 $btn-border-radius-sm:           0rem;
 
 // BOOTSTRAP SCSS IMPORTS
-// Core variables and mixins
+@import "functions";
 @import "variables";
 @import "mixins";
-
-// Reset and dependencies
-@import "normalize";
 @import "print";
-
-// Core CSS
 @import "reboot";
 @import "type";
 @import "images";
@@ -80,9 +80,7 @@ $btn-border-radius-sm:           0rem;
 @import "tables";
 @import "forms";
 @import "buttons";
-
-// Components
-@import "animation";
+@import "transitions";
 @import "dropdown";
 @import "button-group";
 @import "input-group";
@@ -92,31 +90,38 @@ $btn-border-radius-sm:           0rem;
 @import "card";
 @import "breadcrumb";
 @import "pagination";
-@import "pager";
-@import "labels";
+@import "badge";
 @import "jumbotron";
 @import "alert";
 @import "progress";
 @import "media";
 @import "list-group";
-@import "responsive-embed";
 @import "close";
-
-// Components w/ JavaScript
 @import "modal";
 @import "tooltip";
 @import "popover";
 @import "carousel";
-
-// Utility classes
 @import "utilities";
-@import "utilities-background";
-@import "utilities-spacing";
-@import "utilities-responsive";
 
 /*
-* Global elements
-*/
+ * Global elements
+ */
+html {
+  font-size: $font-size-base;
+}
+
+@include media-breakpoint-up(xs) {
+  html {
+    font-size: $font-size-base * 0.65;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: $font-size-base;
+  }
+}
+
 body a {
   color: $black;
   border-bottom: 1px solid $gray-lighter;
@@ -131,79 +136,29 @@ hr {
   width: 100px;
   height: 1px;
   margin: 2rem auto;
-  background-color: $gray-lighterer;
+  background-color: $gray-lighter;
   border: 0;
-}
-.contact {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 /*
  * Navigation
  */
- // PREVIOUS NAV SETTINGS
- // .navbar .nav-item {
- //   display: block;
- //   float: none;
- //   line-height: 1.75;
- // }
- // @include media-breakpoint-up(md) {
- //   .justified {
- //     margin: 0rem auto;
- //     display: table;
- //     table-layout: fixed;
- //     float: none;
- //   }
- //   .navbar .nav-item {
- //     display: list-item;
- //     float: left;
- //   }
- // }
- // .navbar .container {
- //   margin-top: 1rem;
- //   margin-bottom: 1rem;
- //   border-radius: 3px;
- // }
- // .nav-item a {
- //   color: $gray-light;
- // }
- // .nav-item.first {
- //   margin-left: 1rem;
- // }
- // .nav-item.active a {
- //   color: $gray-dark;
- //   font-weight: bold;
- // }
- // a.nav-link:hover,
- // a.nav-link:focus {
- //   color: darken($gray-light, 15%);
- // }
+
 body > nav {
   box-shadow: 0 4px 2px -2px lighten($gray-lighter, 10%);
 }
 
-body > nav > button {
-  float: right;
-}
-
-
 #navbar-header, #navbar-header > ul {
-  display: inline;
-  float: right;
   list-style-type: none;
   margin-bottom: 0rem;
 }
-.navbar-fixed-top {
+.navbar.fixed-top {
   background-color: #f7f7f9;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 .nav-item a {
   color: $gray-light;
-}
-.nav-item.first {
-  margin-left: 1rem;
 }
 .nav-item.active a {
   color: $gray-dark;
@@ -223,34 +178,27 @@ a.nav-link:focus {
  }
 @include media-breakpoint-up(md) {
   .container {
-    background-color: $container-color;
+    // background-color: $container-color;
   }
   .wrapper .container {
-    border-top: 0.65rem solid $gray-dark;
+    // border-top: 0.65rem solid $gray-dark;
   }
 }
 
 .container {
-  background-color: $container-color;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+  // background-color: $container-color;
+  // box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 58rem;
 }
 
 @include media-breakpoint-up(md) {
   .container {
-    border-radius: 3px;
+    // border-radius: 3px;
   }
 }
 .wrapper .container {
-  border-top: 0.65rem solid $gray-dark;
-}
-
-/*
- * PAGE
- */
-.page {
-  padding: 2rem 1rem;
+  // border-top: 0.65rem solid $gray-dark;
 }
 
 /*
@@ -273,48 +221,30 @@ a.nav-link:focus {
   margin-right: 1.5rem;
 }
 
-.archive-item {
+.news-item {
   margin-bottom: 0.5rem;
   overflow: auto;
 }
-.post-date, .archive-date {
+.post-date, .news-date {
   color: $gray-light;
   float: none;
   display: block;
   margin-left: 0rem;
 }
 @include media-breakpoint-up(sm) {
-  .post-date, .archive-date {
+  .post-date, .news-date {
     float: right;
     display: inline;
     margin-left: 1rem;
   }
 }
-.archive-year {
-  margin-top: 1.5rem;
-}
-
-/*
- * HOME
- */
-.home-header img {
-  max-width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-}
-// .latest {
-//   font-size: 0.75rem;
-// }
-.featured-works {
-  margin-bottom: 2rem;
+.news-year {
+  margin-top: 2rem;
 }
 
 /*
  * ABOUT
  */
-.headshot img {
-  max-width: 100%;
-}
 @media (min-width: 40em) {
   .headshot img {
     max-width: 75%;
@@ -340,9 +270,6 @@ a.nav-link:focus {
 .recording p {
   margin-bottom: 0.25rem;
 }
-.composer {
-  color: $brand-primary;
-}
 .recording .work {
   font-style: italic;
 }
@@ -350,9 +277,6 @@ a.nav-link:focus {
 /*
  * PERFORMANCES
  */
-.year-btn {
-  margin-bottom: 1.5rem;
-}
 .performance {
   margin-bottom: 3rem;
 }
@@ -383,9 +307,9 @@ a.nav-link:focus {
 .filters {
    margin-bottom: 1rem;
  }
-.title {
-  font-weight: bold;
-}
+// .title {
+//   font-weight: bold;
+// }
 .instrumentation {
   color: $gray;
 }
@@ -401,9 +325,7 @@ p.instrumentation {
 .duration {
   color: $gray;
 }
-.work {
-  margin-bottom: $spacer;
-}
+
 .program-notes {
   margin-bottom: 1rem;
 }

@@ -26,7 +26,7 @@
   <!-- Google Fonts -->
   <!-- Alternate heading family font: Source Sans Pro:400,300,300italic,400italic -->
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,700' rel='stylesheet' type='text/css'>
 
   <!-- fancyBox -->
   <link rel="stylesheet" href="/assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
@@ -44,15 +44,16 @@
 
 </header>
 
-    <nav class="navbar navbar-fixed-top">
-  <button class="navbar-toggler navbar-toggler-right navbar-toggleable-md hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
-  </button>
+    <nav class="navbar navbar-expand-lg fixed-top">
 
   <a class="navbar-brand" href="#">Christopher Chandler | composer</a>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
   <div class="collapse navbar-collapse" id="navbar-header">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto flex-column flex-lg-row">
       
         
         
@@ -109,156 +110,56 @@
   </div>
 </nav>
 
-<!-- <nav class="navbar navbar-static-top">
-  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header">
-    <i class="fa fa-bars"></i>
-  </button>
-  <div class="collapse navbar-toggleable-sm" id="navbar-header">
-    <div class="container">
-      <ul class="nav navbar-nav justified">
-        
-          
-          
-
-          <li class="nav-item first  ">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/news/">News</a>
-          </li>
-
-        
-          
-          
-             switch back to this if sr-only looks weird on mobile
-            
-          
-
-          <li class="nav-item  active <span class= ">
-            <a class="nav-link" href="/music/">Music</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/recordings/">Recordings</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   last">
-            <a class="nav-link" href="/performances/">Performances</a>
-          </li>
-
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
--->
-
     
     <div class="wrapper">
       <div class="container">
 
-        <article class="page">
+        <article class="page pt-3">
 
   <header class="page-header">
-    <h1 class="page-title">Music</h1>
+    <h1 class="mb-3 text-center">Music</h1>
   </header>
 
   <div class="page-content">
     <div class="row">
-	<div class="filters col-md-4 col-md-push-8 hidden-sm-down">
+	<div class="filters col-5 col-sm-5 col-md-3 order-1 order-sm-1 order-md-2 text-center text-md-left">
 		<h5>Instrumentation:</h5>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter="all">
 			All
 		</button>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter=".large">
 			Large Ensemble
 		</button>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter=".chamber">
 			Chamber Ensemble
 		</button>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter=".electroacoustic">
 			Electroacoustic
 		</button>
 		<button
 			type="button"
-			class="btn btn-secondary-outline btn-sm btn-block filter-work"
+			class="btn btn-outline-secondary btn-sm btn-block filter-work"
 			data-filter=".solo">
 			Solo
 		</button>
 	</div>
 
-	<div class="filters col-sm-12 hidden-md-up">
-		<h5>Instrumentation:</h5>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter="all">
-			All
-		</button>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter=".large">
-			Large Ensemble
-		</button>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter=".chamber">
-			Chamber Ensemble
-		</button>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter=".electroacoustic">
-			Electroacoustic
-		</button>
-		<button
-			type="button"
-			class="btn btn-secondary-outline btn-sm filter-work"
-			data-filter=".solo">
-			Solo
-		</button>
-	</div>
-
-	<div class="mixitup-music works-list col-md-8 col-md-pull-4 col-xs-12">
+	<div class="mixitup-music works-list col-12 col-md-9 order-2 order-sm-2 order-md-1 text-center text-md-left">
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/the-view-from-here.html">the view from here</a></span>
@@ -270,7 +171,7 @@
 			
 		
 			
-			<div class="row work chamber electroacoustic">
+			<div class="pb-3 work chamber electroacoustic">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/recast-fragments.html">Recast Fragments</a></span>
@@ -282,7 +183,7 @@
 			
 		
 			
-			<div class="row work electroacoustic">
+			<div class="pb-3 work electroacoustic">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/ash-and-cinders.html">Ash and Cinders</a></span>
@@ -294,7 +195,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/star-lit-cigarette.html">Star Lit Cigarette</a></span>
@@ -306,7 +207,7 @@
 			
 		
 			
-			<div class="row work large">
+			<div class="pb-3 work large">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/two-pieces.html">Two Pieces for Chamber Orchestra</a></span>
@@ -318,7 +219,7 @@
 			
 		
 			
-			<div class="row work large">
+			<div class="pb-3 work large">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/smoke-and-mirrors-ii.html">Smoke and Mirrors II</a></span>
@@ -330,7 +231,7 @@
 			
 		
 			
-			<div class="row work chamber electroacoustic">
+			<div class="pb-3 work chamber electroacoustic">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/smoke-and-mirrors.html">Smoke and Mirrors</a></span>
@@ -342,7 +243,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/deep-in-liquid-indigo.html">deep in liquid indigo</a></span>
@@ -354,7 +255,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title">Three Introductions</span>
@@ -366,7 +267,7 @@
 			
 		
 			
-			<div class="row work electroacoustic solo">
+			<div class="pb-3 work electroacoustic solo">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/in-shadow-in-shade.html">in shadow, in shade</a></span>
@@ -378,7 +279,7 @@
 			
 		
 			
-			<div class="row work large">
+			<div class="pb-3 work large">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/shifts-chamber.html">Shifts (Chamber Orchestra)</a></span>
@@ -390,7 +291,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title">Homage Fragment</span>
@@ -402,7 +303,7 @@
 			
 		
 			
-			<div class="row work electroacoustic solo">
+			<div class="pb-3 work electroacoustic solo">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/a-thing-of-dream-and-mist.html">a thing of dream and mist</a></span>
@@ -414,7 +315,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/through-a-glass-darkly.html">through a glass darkly</a></span>
@@ -426,7 +327,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/quartet.html">Quartet</a></span>
@@ -438,7 +339,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/omaggio-a-sciarrino.html">Omaggio a Sciarrino</a></span>
@@ -450,7 +351,7 @@
 			
 		
 			
-			<div class="row work electroacoustic">
+			<div class="pb-3 work electroacoustic">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/doppelganger.html">Doppelgänger</a></span>
@@ -462,7 +363,7 @@
 			
 		
 			
-			<div class="row work large">
+			<div class="pb-3 work large">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/shifts.html">Shifts</a></span>
@@ -474,7 +375,7 @@
 			
 		
 			
-			<div class="row work electroacoustic solo">
+			<div class="pb-3 work electroacoustic solo">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/the-spark-of-opposites.html">The Spark of Opposites</a></span>
@@ -486,7 +387,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title">Emergence</span>
@@ -498,7 +399,7 @@
 			
 		
 			
-			<div class="row work electroacoustic">
+			<div class="pb-3 work electroacoustic">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/splinter.html">Splinter</a></span>
@@ -510,7 +411,7 @@
 			
 		
 			
-			<div class="row work electroacoustic">
+			<div class="pb-3 work electroacoustic">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/maelstrom.html">Maelstrom</a></span>
@@ -522,7 +423,7 @@
 			
 		
 			
-			<div class="row work chamber">
+			<div class="pb-3 work chamber">
 				 <div class="col-xs-12 info">
 					
 						<span class="title"><a href="/music/the-resonance-after.html">the resonance after...</a></span>
@@ -557,7 +458,7 @@
     </div><!-- /.wrapper -->
 
     <footer class="site-footer">
-  <div class="text-xs-center contact">
+  <div class="text-center mt-4 mb-4">
     <h5>Contact</h5>
     <script>
       var eml = 'chr' + 'isto' + 'phe' + 'r.e.' + 'chan' + 'dle' + 'r@' + 'g' + 'ma' + 'il' + '.c' +'om';

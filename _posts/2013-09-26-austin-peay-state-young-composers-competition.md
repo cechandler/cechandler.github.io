@@ -12,6 +12,6 @@ I am very happy to have received a second First Prize award from the Austin Peay
 
 See the announcement [here](http://businessclarksville.com/education/christopher-chandler-wins-apsus-27th-annual-young-composer/2013/11/19/58824).
 
-<div class="text-xs-center">
+<div class="text-center">
   <img src="{{site.baseurl}}/assets/img/austin-peay-logo.jpg" alt="Austin Peay" width="50%" height="50%" border="" align="" />
 </div>

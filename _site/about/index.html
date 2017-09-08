@@ -26,7 +26,7 @@
   <!-- Google Fonts -->
   <!-- Alternate heading family font: Source Sans Pro:400,300,300italic,400italic -->
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,700' rel='stylesheet' type='text/css'>
 
   <!-- fancyBox -->
   <link rel="stylesheet" href="/assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
@@ -44,15 +44,16 @@
 
 </header>
 
-    <nav class="navbar navbar-fixed-top">
-  <button class="navbar-toggler navbar-toggler-right navbar-toggleable-md hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
-  </button>
+    <nav class="navbar navbar-expand-lg fixed-top">
 
   <a class="navbar-brand" href="#">Christopher Chandler | composer</a>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
   <div class="collapse navbar-collapse" id="navbar-header">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto flex-column flex-lg-row">
       
         
         
@@ -109,97 +110,46 @@
   </div>
 </nav>
 
-<!-- <nav class="navbar navbar-static-top">
-  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header">
-    <i class="fa fa-bars"></i>
-  </button>
-  <div class="collapse navbar-toggleable-sm" id="navbar-header">
-    <div class="container">
-      <ul class="nav navbar-nav justified">
-        
-          
-          
-
-          <li class="nav-item first  ">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-
-        
-          
-          
-             switch back to this if sr-only looks weird on mobile
-            
-          
-
-          <li class="nav-item  active <span class= ">
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/news/">News</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/music/">Music</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/recordings/">Recordings</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   last">
-            <a class="nav-link" href="/performances/">Performances</a>
-          </li>
-
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
--->
-
     
     <div class="wrapper">
       <div class="container">
 
-        <article class="page">
+        <article class="page pt-3">
 
   <header class="page-header">
-    <h1 class="page-title text-lg-center">About</h1>
+    <h1 class="mb-3 text-center">About</h1>
   </header>
 
   <div class="page-content">
     <div class="row">
 
-      <div class="col-lg-12 col-md-12 col-sm-12 headshot">
-        <img src="/assets/img/chris-chandler-headshot-woods.jpg" width=80% height=80% alt="headshot"/>
-      </div>
+  <div class="col-12 mb-3">
+    <img src="/assets/img/chris-chandler-headshot-woods.jpg" class="img-fluid" alt="headshot"/>
+  </div>
 
-      <div class="col-lg-12 col-md-12 col-sm-12 bio">
-        <p>Christopher Chandler is a composer of acoustic and electroacoustic music currently serving as a Visiting Instructor at the University of Richmond where he teaches courses in composition and music technology. His music has been performed across the United States, Canada, and France by ensembles including eighth blackbird, the Argento Chamber Ensemble, Ensemble Interface, the Cleveland Chamber Symphony, and Le Nouvel Ensemble Moderne. Recent performances include June in Buffalo, Domaine Forget, the Florida State University New Music Festival, the New York City Electroacoustic Music Festival, and SEAMUS Conferences.</p>
+  <div class="col-12">
+    <p>Christopher Chandler is a composer of acoustic and electroacoustic music currently serving as a Visiting Instructor at the University of Richmond where he teaches courses in composition and music technology. His music has been performed across the United States, Canada, and France by ensembles including eighth blackbird, the Argento Chamber Ensemble, Ensemble Interface, the Cleveland Chamber Symphony, and Le Nouvel Ensemble Moderne. Recent performances include June in Buffalo, Domaine Forget, the Florida State University New Music Festival, the New York City Electroacoustic Music Festival, and SEAMUS Conferences.</p>
 
-        <p>Christopher has been honored with awards including a BMI Student Composer Award, an ASCAP/SEAMUS Student Commission, two first prizes from the Austin Peay State University Young Composer's Award, winner of the American Modern Ensemble’s Annual Composition Competition, and the Nadia Boulanger Composition Prize from the American Conservatory in Fontainebleau, France. Christopher received his B.A. in composition and theory from the University of Richmond, his M.M. in composition from Bowling Green State University, and he is currently completing his Ph.D. at the Eastman School of Music.</p>
-      </div>
+    <p>Christopher has been honored with awards including a BMI Student Composer Award, an ASCAP/SEAMUS Student Commission, two first prizes from the Austin Peay State University Young Composer's Award, winner of the American Modern Ensemble’s Annual Composition Competition, and the Nadia Boulanger Composition Prize from the American Conservatory in Fontainebleau, France. Christopher received his B.A. in composition and theory from the University of Richmond, his M.M. in composition from Bowling Green State University, and he is currently completing his Ph.D. at the Eastman School of Music.</p>
+  </div>
 
-    </div> <!-- /.row -->
-  </div> <!-- /.page-content -->
+  <div class="col-12 mb-4 text-center">
+    <a href="/assets/chandler-current-cv.pdf" class="more">
+      <button type="button" class="btn btn-outline-secondary">Download CV</button>
+    </a>
+  </div>
+
+  <h2 class="pb-3 text-center">Photos</p>
+  <div class="d-flex flex-row">
+    <div class="p-2"><img src="/assets/img/chris-chandler-headshot-woods.jpg" class="img-fluid img-thumbnail" alt="headshot"/></div>
+    <div class="p-2"><img src="/assets/img/chris-chandler-headshot-woods.jpg" class="img-fluid img-thumbnail" alt="headshot"/></div>
+    <div class="p-2"><img src="/assets/img/chris-chandler-headshot-woods.jpg" class="img-fluid img-thumbnail" alt="headshot"/></div>
+    <div class="p-2"><img src="/assets/img/chris-chandler-headshot-woods.jpg" class="img-fluid img-thumbnail" alt="headshot"/></div>
+  </div>
+
+</div>
+
+  </div>
 
 </article>
 
@@ -208,7 +158,7 @@
     </div><!-- /.wrapper -->
 
     <footer class="site-footer">
-  <div class="text-xs-center contact">
+  <div class="text-center mt-4 mb-4">
     <h5>Contact</h5>
     <script>
       var eml = 'chr' + 'isto' + 'phe' + 'r.e.' + 'chan' + 'dle' + 'r@' + 'g' + 'ma' + 'il' + '.c' +'om';

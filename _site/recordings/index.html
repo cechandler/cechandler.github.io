@@ -26,7 +26,7 @@
   <!-- Google Fonts -->
   <!-- Alternate heading family font: Source Sans Pro:400,300,300italic,400italic -->
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,700' rel='stylesheet' type='text/css'>
 
   <!-- fancyBox -->
   <link rel="stylesheet" href="/assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
@@ -44,15 +44,16 @@
 
 </header>
 
-    <nav class="navbar navbar-fixed-top">
-  <button class="navbar-toggler navbar-toggler-right navbar-toggleable-md hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
-  </button>
+    <nav class="navbar navbar-expand-lg fixed-top">
 
   <a class="navbar-brand" href="#">Christopher Chandler | composer</a>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
   <div class="collapse navbar-collapse" id="navbar-header">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto flex-column flex-lg-row">
       
         
         
@@ -109,131 +110,187 @@
   </div>
 </nav>
 
-<!-- <nav class="navbar navbar-static-top">
-  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header">
-    <i class="fa fa-bars"></i>
-  </button>
-  <div class="collapse navbar-toggleable-sm" id="navbar-header">
-    <div class="container">
-      <ul class="nav navbar-nav justified">
-        
-          
-          
-
-          <li class="nav-item first  ">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/news/">News</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/music/">Music</a>
-          </li>
-
-        
-          
-          
-             switch back to this if sr-only looks weird on mobile
-            
-          
-
-          <li class="nav-item  active <span class= ">
-            <a class="nav-link" href="/recordings/">Recordings</a>
-          </li>
-
-        
-          
-          
-
-          <li class="nav-item   last">
-            <a class="nav-link" href="/performances/">Performances</a>
-          </li>
-
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
--->
-
     
     <div class="wrapper">
       <div class="container">
 
-        <article class="page">
+        <article class="page pt-3">
 
   <header class="page-header">
-    <h1 class="page-title">Recordings</h1>
+    <h1 class="mb-3 text-center">Recordings</h1>
   </header>
 
   <div class="page-content">
     <div class="row recording">
-  <div class="col-md-3 col-sm-4 col-xs-6 cd-cover">
-    <img src="/assets/img/seamus-vol23.jpg" alt="" />
+  <div class="col-6 col-sm-4 col-md-4 pb-4 pb-md-0 mx-auto mx-md-0 cd-cover">
+    <img src=" /assets/img/seamus-vol23.jpg " alt="" class="img-thumbnail"/>
   </div>
-  <div class="col-md-9 col-sm-8 col-xs-12">
-    <h3>Music from SEAMUS Volume 23 (2014)</h3>
-    <p><span class="composer">Cort Lippe</span> - <span class="work">Duo for Cajón and Computer</span> (2011)</p>
-    <p><span class="composer">David Gedosh</span> - <span class="work">Train Song</span> (2008)</p>
-    <p><span class="composer">Chester Udell</span> - <span class="work">Steel Golem</span> (2011-12)</p>
-    <p><span class="composer">Elliot Patros</span> - <span class="work">MR-HSC</span> (2012)</p>
-    <p><span class="composer">Christopher Chandler</span> - <span class="work">Smoke and Mirrors</span> (2013)</p>
-    <p><span class="composer">Halim Beere</span> - <span class="work">Bright Lines</span> (2012)</p>
-    <p><span class="composer">Jeffrey Hass</span> - <span class="work">Three Etudes for Piano and Electronics</span> (2013)</p>
-    <p><span class="composer">Butch Rovan</span> - <span class="work">Desire with Digressions</span> (2012)</p>
+  <div class="col-12 col-md-7 text-center text-md-left">
+    <h4>Music from SEAMUS Volume 23 (2014)</h4>
+
+    <div class="d-flex justify-content-between pb-1">
+      <div class="composer">Cort Lippe</div>
+      <div class="work">Duo for Cajón and Computer (2011)</div>
+    </div>
+
+    <div class="d-flex justify-content-between pb-1">
+      <div class="composer">David Gedosh</div>
+      <div class="work">Train Song (2008)</div>
+    </div>
+
+    <div class="d-flex justify-content-between pb-1">
+      <div class="composer">Chester Udell</div>
+      <div class="work">Steel Golem (2011-12)</div>
+    </div>
+
+    <div class="d-flex justify-content-between pb-1">
+      <div class="composer">Elliot Patros</div>
+      <div class="work">MR-HSC (2012)</div>
+    </div>
+
+    <div class="d-flex justify-content-between pb-1">
+      <div class="composer">Christopher Chandler</div>
+      <div class="work">Smoke and Mirrors (2013)</div>
+    </div>
+
+    <div class="d-flex justify-content-between pb-1">
+      <div class="composer">Halim Beere</div>
+      <div class="work">Bright Lines (2012)</div>
+    </div>
+
+    <div class="d-flex justify-content-between pb-1">
+      <div class="composer">Jeffrey Hass</div>
+      <div class="work">Three Etudes for Piano and Electronics (2013)</div>
+    </div>
+
+    <div class="d-flex justify-content-between pb-1">
+      <div class="composer">Butch Rovan</div>
+      <div class="work">Desire with Digressions (2012)</div>
+    </div>
+
   </div>
 </div>
 
 <div class="row recording">
-  <div class="col-md-3 col-sm-4 col-xs-6 cd-cover">
-    <img src="/assets/img/seamus-transients.jpg" alt="" />
+  <div class="col-6 col-sm-4 col-md-4 pb-4 pb-md-0 mx-auto mx-md-0 cd-cover">
+    <img src=" /assets/img/seamus-transients.jpg " alt="" class="img-thumbnail"/>
   </div>
-  <div class="col-md-9 col-sm-8 col-xs-12">
-    <h3>SEAMUS Electro-Acoustic Miniatures: Transients (2014)</h3>
+  <div class="col-12 col-md-7 text-center text-md-left">
+    <h4>SEAMUS Electro-Acoustic Miniatures: Transients (2014)</h4>
 
-    <div class="row">
-      <div class="col-md-6">
-        <p><span class="composer">Cody Kauhl</span> - <span class="work">5 More Irrelevant Facs</span></p>
-        <p><span class="composer">Melody Eötvös</span> - <span class="work">A Sample of The Atmosphere</span></p>
-        <p><span class="composer">Andrew Martin Smith</span> - <span class="work">Echoes in the Darkness</span></p>
-        <p><span class="composer">Panayiotis Kokoras</span> - <span class="work">Mnemonics</span></p>
-        <p><span class="composer">Ben Taylor</span> - <span class="work">Collective Motion</span></p>
-        <p><span class="composer">Cody Brookshire</span> - <span class="work">Harmonic Meditation No. 1</span></p>
-        <p><span class="composer">Maxwell Tfirn</span> - <span class="work">When Will the Destruction End?</span></p>
-        <p><span class="composer">Josh Simmons</span> - <span class="work">In Memoriam, Frankie Knuckles</span></p>
-        <p><span class="composer">Jon Hallstrom</span> - <span class="work">Telos Relinquished</span></p>
-      </div>
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Cody Kauhl</div>
+          <div class="work">5 More Irrelevant Facs</span>
+          </div>
+        </div>
 
-      <div class="col-md-6">
-        <p><span class="composer">Christopher Chandler</span> - <span class="work">Ash and Cinders</span></p>
-        <p><span class="composer">Doug Geers</span> - <span class="work">Bloom Boundary</span></p>
-        <p><span class="composer">Robert Gibson</span> - <span class="work">Brood X</span></p>
-        <p><span class="composer">Mitchell Herrmann</span> - <span class="work">Kettledrum Organ</span></p>
-        <p><span class="composer">Zach Sheets</span> - <span class="work">Erre</span></p>
-        <p><span class="composer">Andrew Babcock</span> - <span class="work">Heteroglot</span></p>
-        <p><span class="composer">Ryan Carter</span> - <span class="work">Memory Failure</span></p>
-        <p><span class="composer">Simon Hutchinson</span> - <span class="work">Freighthopping</span></p>
-        <p><span class="composer">Larry Matthew Gaab</span> - <span class="work">Be That Suddenness</span></p>
-        <p><span class="composer">John Nichols III</span> - <span class="work">Anicca</span></p>
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Melody Eötvös</div>
+          <div class="work">A Sample of The Atmosphere</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Andrew Martin Smith</div>
+          <div class="work">Echoes in the Darkness</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Panayiotis Kokoras</div>
+          <div class="work">Mnemonics</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Ben Taylor</div>
+          <div class="work">Collective Motion</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Cody Brookshire</div>
+          <div class="work">Harmonic Meditation No. 1</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Maxwell Tfirn</div>
+          <div class="work">When Will the Destruction End?</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Josh Simmons</div>
+          <div class="work">In Memoriam, Frankie Knuckles</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Jon Hallstrom</div>
+          <div class="work">Telos Relinquished</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Christopher Chandler</div>
+          <div class="work">Ash and Cinders</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Doug Geers</div>
+          <div class="work">Bloom Boundary</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Robert Gibson</div>
+          <div class="work">Brood X</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Mitchell Herrmann</div>
+          <div class="work">Kettledrum Organ</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Zach Sheets</div>
+          <div class="work">Erre</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Andrew Babcock</div>
+          <div class="work">Heteroglot</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Ryan Carter</div>
+          <div class="work">Memory Failure</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Simon Hutchinson</div>
+          <div class="work">Freighthopping</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">Larry Matthew Gaab</div>
+          <div class="work">Be That Suddenness</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pb-1">
+          <div class="composer">John Nichols III</div>
+          <div class="work">Anicca</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -248,7 +305,7 @@
     </div><!-- /.wrapper -->
 
     <footer class="site-footer">
-  <div class="text-xs-center contact">
+  <div class="text-center mt-4 mb-4">
     <h5>Contact</h5>
     <script>
       var eml = 'chr' + 'isto' + 'phe' + 'r.e.' + 'chan' + 'dle' + 'r@' + 'g' + 'ma' + 'il' + '.c' +'om';
