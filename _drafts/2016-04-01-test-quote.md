@@ -1,12 +1,11 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: Test Quote
 author: Chris
 categories: quote
 tags:
-comments: []
 ---
 
 > <i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>

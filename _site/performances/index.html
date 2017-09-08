@@ -33,8 +33,8 @@
   <link rel="stylesheet" href="/assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
   <link rel="stylesheet" href="/assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 
-  <link rel="canonical" href="/performances/">
-  <link rel="alternate" type="application/rss+xml" title="CEC | Composer" href="/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/performances/">
+  <link rel="alternate" type="application/rss+xml" title="CEC | Composer" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -44,7 +44,72 @@
 
 </header>
 
-    <nav class="navbar navbar-static-top">
+    <nav class="navbar navbar-fixed-top">
+  <button class="navbar-toggler navbar-toggler-right navbar-toggleable-md hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <a class="navbar-brand" href="#">Christopher Chandler | composer</a>
+
+  <div class="collapse navbar-collapse" id="navbar-header">
+    <ul class="navbar-nav">
+      
+        
+        
+
+        <li class="nav-item first  ">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+
+      
+        
+        
+
+        <li class="nav-item   ">
+          <a class="nav-link" href="/about/">About</a>
+        </li>
+
+      
+        
+        
+
+        <li class="nav-item   ">
+          <a class="nav-link" href="/news/">News</a>
+        </li>
+
+      
+        
+        
+
+        <li class="nav-item   ">
+          <a class="nav-link" href="/music/">Music</a>
+        </li>
+
+      
+        
+        
+
+        <li class="nav-item   ">
+          <a class="nav-link" href="/recordings/">Recordings</a>
+        </li>
+
+      
+        
+        
+          <!--  switch back to this if sr-only looks weird on mobile-->
+          
+        
+
+        <li class="nav-item  active <span class= last">
+          <a class="nav-link" href="/performances/">Performances</a>
+        </li>
+
+      
+    </ul>
+  </div>
+</nav>
+
+<!-- <nav class="navbar navbar-static-top">
   <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header">
     <i class="fa fa-bars"></i>
   </button>
@@ -64,7 +129,7 @@
           
 
           <li class="nav-item   ">
-            <a class="nav-link" href="/news/">News</a>
+            <a class="nav-link" href="/about/">About</a>
           </li>
 
         
@@ -72,7 +137,7 @@
           
 
           <li class="nav-item   ">
-            <a class="nav-link" href="/about/">About</a>
+            <a class="nav-link" href="/news/">News</a>
           </li>
 
         
@@ -94,7 +159,7 @@
         
           
           
-            <!--  switch back to this if sr-only looks weird on mobile-->
+             switch back to this if sr-only looks weird on mobile
             
           
 
@@ -107,6 +172,8 @@
     </div>
   </div>
 </nav>
+
+-->
 
     
     <div class="wrapper">
@@ -137,6 +204,13 @@
 	</button>
 
 	<!-- conditionally generate buttons based on current year variable -->
+	
+		<button
+			type="button"
+			class="btn btn-secondary-outline btn-sm filter-event"
+			data-filter=".2017">
+			2017
+		</button>
 	
 		<button
 			type="button"
@@ -217,7 +291,7 @@
 			
 			
 
-			<div class="performance 2017  upcoming ">
+			<div class="performance 2017 ">
 
 				<div class="row hidden-xs-down">
 
@@ -317,7 +391,7 @@
 			
 			
 
-			<div class="performance 2016  upcoming ">
+			<div class="performance 2016 ">
 
 				<div class="row hidden-xs-down">
 
@@ -414,7 +488,7 @@
 			
 			
 
-			<div class="performance 2016  upcoming ">
+			<div class="performance 2016 ">
 
 				<div class="row hidden-xs-down">
 
@@ -2595,7 +2669,7 @@
 
 				 	 <div class="details col-xs-8 col-md-8">
 						 <h3 class="date">November 3, 2015</h3>
-						 <h4 class="location">620 3rd Ave South., MN</h4>
+						 <h4 class="location">St. Cloud, MN</h4>
 
 						 
 						 	 <p class="performer">Ensemble U:</p>
@@ -2609,9 +2683,10 @@
 							 <p>Performing Arts Center, Recital Hall</p>
 
 							 
+							 	 <p>620 3rd Ave South.</p>
 							 
 
-							 <p>620 3rd Ave South., MN</p>
+							 <p>St. Cloud, MN</p>
 						 </div>
 
 						 
@@ -2638,7 +2713,7 @@
 
 						<div class="col-xs-6">
 							<h3 class="date">November 3, 2015</h3>
-							<h4 class="location">620 3rd Ave South., MN</h4>
+							<h4 class="location">St. Cloud, MN</h4>
 						</div>
 
 						<div class="details col-xs-12">
@@ -2654,9 +2729,10 @@
 								<p>Performing Arts Center, Recital Hall</p>
 
 	 						 	
-	 						 	
+									<p>620 3rd Ave South.</p>
+								
 
-								<p>620 3rd Ave South., MN</p>
+								<p>St. Cloud, MN</p>
 							</div>
 
 	 						
@@ -5034,7 +5110,7 @@
 
 				 	 <div class="details col-xs-8 col-md-8">
 						 <h3 class="date">August 22, 2013</h3>
-						 <h4 class="location">Saint-Ir̩n̩e, Quebec, CN</h4>
+						 <h4 class="location">Saint-Irénée, Quebec, CN</h4>
 
 						 
 							 <p class="performer">Le Nouvel Ensemble Moderne</p>
@@ -5046,12 +5122,12 @@
 						 
 
 						 <div class="address">
-							 <p>Salle Fran̤oys-Bernier</p>
+							 <p>Salle Françoys-Bernier</p>
 
 							 
 							 
 
-							 <p>Saint-Ir̩n̩e, Quebec, CN</p>
+							 <p>Saint-Irénée, Quebec, CN</p>
 						 </div>
 
 						 
@@ -5078,7 +5154,7 @@
 
 						<div class="col-xs-6">
 							<h3 class="date">August 22, 2013</h3>
-							<h4 class="location">Saint-Ir̩n̩e, Quebec, CN</h4>
+							<h4 class="location">Saint-Irénée, Quebec, CN</h4>
 						</div>
 
 						<div class="details col-xs-12">
@@ -5092,12 +5168,12 @@
 	 						
 
 	 						<div class="address">
-								<p>Salle Fran̤oys-Bernier</p>
+								<p>Salle Françoys-Bernier</p>
 
 	 						 	
 	 						 	
 
-								<p>Saint-Ir̩n̩e, Quebec, CN</p>
+								<p>Saint-Irénée, Quebec, CN</p>
 							</div>
 
 	 						
@@ -5133,7 +5209,7 @@
 
 				 	 <div class="details col-xs-8 col-md-8">
 						 <h3 class="date">August 19, 2013</h3>
-						 <h4 class="location">Saint-Ir̩n̩e, Quebec, CN</h4>
+						 <h4 class="location">Saint-Irénée, Quebec, CN</h4>
 
 						 
 							 <p class="performer">Le Nouvel Ensemble Moderne</p>
@@ -5145,12 +5221,12 @@
 						 
 
 						 <div class="address">
-							 <p>Salle Fran̤oys-Bernier</p>
+							 <p>Salle Françoys-Bernier</p>
 
 							 
 							 
 
-							 <p>Saint-Ir̩n̩e, Quebec, CN</p>
+							 <p>Saint-Irénée, Quebec, CN</p>
 						 </div>
 
 						 
@@ -5177,7 +5253,7 @@
 
 						<div class="col-xs-6">
 							<h3 class="date">August 19, 2013</h3>
-							<h4 class="location">Saint-Ir̩n̩e, Quebec, CN</h4>
+							<h4 class="location">Saint-Irénée, Quebec, CN</h4>
 						</div>
 
 						<div class="details col-xs-12">
@@ -5191,12 +5267,12 @@
 	 						
 
 	 						<div class="address">
-								<p>Salle Fran̤oys-Bernier</p>
+								<p>Salle Françoys-Bernier</p>
 
 	 						 	
 	 						 	
 
-								<p>Saint-Ir̩n̩e, Quebec, CN</p>
+								<p>Saint-Irénée, Quebec, CN</p>
 							</div>
 
 	 						
@@ -7208,7 +7284,7 @@
 						 
 
 						 
-						 		<p class="composition">Doppelganger</p>
+						 		<p class="composition">Doppelgänger</p>
 						 
 
 				 	 </div><!-- /.details -->
@@ -7252,7 +7328,7 @@
 	 						
 
 	 						
-	 							 <p class="composition">Doppelganger</p>
+	 							 <p class="composition">Doppelgänger</p>
 	 						
 						</div><!-- /.details -->
 
@@ -7498,7 +7574,7 @@
 						 
 
 						 
-						 		<p class="composition">Doppelganger</p>
+						 		<p class="composition">Doppelgänger</p>
 						 
 
 				 	 </div><!-- /.details -->
@@ -7543,7 +7619,7 @@
 	 						
 
 	 						
-	 							 <p class="composition">Doppelganger</p>
+	 							 <p class="composition">Doppelgänger</p>
 	 						
 						</div><!-- /.details -->
 
@@ -9206,9 +9282,9 @@
       document.write('<a href="mai' + 'lto:' + eml +'">' + eml + '</a>');
     </script>
     <address>
-      Booker Hall of Music <br>
+      Sarah Brunet Memorial Hall <br>
       University of Richmond <br>
-      28 Westhampton Way <br>
+      18 Richmond Way <br>
       Richmond, VA 23173
     </address>
   </div>

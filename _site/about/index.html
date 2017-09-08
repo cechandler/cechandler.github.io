@@ -33,8 +33,8 @@
   <link rel="stylesheet" href="/assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
   <link rel="stylesheet" href="/assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 
-  <link rel="canonical" href="/about/">
-  <link rel="alternate" type="application/rss+xml" title="CEC | Composer" href="/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/about/">
+  <link rel="alternate" type="application/rss+xml" title="CEC | Composer" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -44,7 +44,72 @@
 
 </header>
 
-    <nav class="navbar navbar-static-top">
+    <nav class="navbar navbar-fixed-top">
+  <button class="navbar-toggler navbar-toggler-right navbar-toggleable-md hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <a class="navbar-brand" href="#">Christopher Chandler | composer</a>
+
+  <div class="collapse navbar-collapse" id="navbar-header">
+    <ul class="navbar-nav">
+      
+        
+        
+
+        <li class="nav-item first  ">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+
+      
+        
+        
+          <!--  switch back to this if sr-only looks weird on mobile-->
+          
+        
+
+        <li class="nav-item  active <span class= ">
+          <a class="nav-link" href="/about/">About</a>
+        </li>
+
+      
+        
+        
+
+        <li class="nav-item   ">
+          <a class="nav-link" href="/news/">News</a>
+        </li>
+
+      
+        
+        
+
+        <li class="nav-item   ">
+          <a class="nav-link" href="/music/">Music</a>
+        </li>
+
+      
+        
+        
+
+        <li class="nav-item   ">
+          <a class="nav-link" href="/recordings/">Recordings</a>
+        </li>
+
+      
+        
+        
+
+        <li class="nav-item   last">
+          <a class="nav-link" href="/performances/">Performances</a>
+        </li>
+
+      
+    </ul>
+  </div>
+</nav>
+
+<!-- <nav class="navbar navbar-static-top">
   <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-header">
     <i class="fa fa-bars"></i>
   </button>
@@ -62,20 +127,20 @@
         
           
           
-
-          <li class="nav-item   ">
-            <a class="nav-link" href="/news/">News</a>
-          </li>
-
-        
-          
-          
-            <!--  switch back to this if sr-only looks weird on mobile-->
+             switch back to this if sr-only looks weird on mobile
             
           
 
           <li class="nav-item  active <span class= ">
             <a class="nav-link" href="/about/">About</a>
+          </li>
+
+        
+          
+          
+
+          <li class="nav-item   ">
+            <a class="nav-link" href="/news/">News</a>
           </li>
 
         
@@ -108,6 +173,8 @@
   </div>
 </nav>
 
+-->
+
     
     <div class="wrapper">
       <div class="container">
@@ -115,20 +182,20 @@
         <article class="page">
 
   <header class="page-header">
-    <h1 class="page-title">About</h1>
+    <h1 class="page-title text-lg-center">About</h1>
   </header>
 
   <div class="page-content">
     <div class="row">
-      
-      <div class="col-lg-7 col-md-12 col-sm-12 bio">
+
+      <div class="col-lg-12 col-md-12 col-sm-12 headshot">
+        <img src="/assets/img/chris-chandler-headshot-woods.jpg" width=80% height=80% alt="headshot"/>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12 bio">
         <p>Christopher Chandler is a composer of acoustic and electroacoustic music currently serving as a Visiting Instructor at the University of Richmond where he teaches courses in composition and music technology. His music has been performed across the United States, Canada, and France by ensembles including eighth blackbird, the Argento Chamber Ensemble, Ensemble Interface, the Cleveland Chamber Symphony, and Le Nouvel Ensemble Moderne. Recent performances include June in Buffalo, Domaine Forget, the Florida State University New Music Festival, the New York City Electroacoustic Music Festival, and SEAMUS Conferences.</p>
 
         <p>Christopher has been honored with awards including a BMI Student Composer Award, an ASCAP/SEAMUS Student Commission, two first prizes from the Austin Peay State University Young Composer's Award, winner of the American Modern Ensemble’s Annual Composition Competition, and the Nadia Boulanger Composition Prize from the American Conservatory in Fontainebleau, France. Christopher received his B.A. in composition and theory from the University of Richmond, his M.M. in composition from Bowling Green State University, and he is currently completing his Ph.D. at the Eastman School of Music.</p>
-      </div>
-
-      <div class="col-lg-5 col-md-12 col-sm-12 headshot">
-        <img src="/assets/img/chris-chandler-headshot.jpg" alt="headshot"/>
       </div>
 
     </div> <!-- /.row -->
@@ -148,9 +215,9 @@
       document.write('<a href="mai' + 'lto:' + eml +'">' + eml + '</a>');
     </script>
     <address>
-      Booker Hall of Music <br>
+      Sarah Brunet Memorial Hall <br>
       University of Richmond <br>
-      28 Westhampton Way <br>
+      18 Richmond Way <br>
       Richmond, VA 23173
     </address>
   </div>
