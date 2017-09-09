@@ -11,7 +11,8 @@ program:
 - composer: Bryan Jacobs
   title: TSTS
   year: 2010
-  instrumentation: for septet & electronics <br>International Call for Scores Winner
+  instrumentation: for septet & electronics
+  extra: International Call for Scores Winner
 - composer: Panayiotis Kokoras
   title: Morphallaxis
   year: 2008

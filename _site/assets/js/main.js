@@ -1,9 +1,9 @@
 // MUSIC MIXITUP
 $(function(){
   $('.mixitup-music').mixItUp({
-      animation: {
-        effects: 'fade scale',
-      },
+  animation: {
+    effects: 'fade scale',
+  },
   layout: {
     display: 'block',
   },
@@ -17,14 +17,14 @@ $(function(){
 // PERFORMANCES MIXITUP
 $(function(){
   $('.mixitup-event').mixItUp({
-      animation: {
-      	effects: 'fade scale',
-      },
+  animation: {
+  	effects: 'fade scale',
+  },
   layout: {
   	display: 'block',
   },
   load: {
-  	filter: '.upcoming',
+  	filter: '.recent',
   },
   selectors: {
   	target: '.performance',

@@ -47,22 +47,6 @@ $headings-font-weight:      bold;
 $headings-line-height:      1.1;
 $headings-color:            inherit;
 
-$btn-primary-color:              #fff;
-$btn-primary-bg:                 $brand-primary;
-$btn-primary-border:             $btn-primary-bg;
-
-// $theme-colors: (
-//   secondary: $gray-dark
-// ) !default;
-
-$btn-secondary-color:            $gray-dark;
-$btn-secondary-bg:               #fff;
-$btn-secondary-border:           $gray-dark;
-
-$btn-info-color:                 #fff;
-$btn-info-bg:                    $brand-info;
-$btn-info-border:                $btn-info-bg;
-
 $btn-border-radius:              0rem;
 $btn-border-radius-lg:           0rem;
 $btn-border-radius-sm:           0rem;
@@ -254,7 +238,6 @@ a.nav-link:focus {
   padding-bottom: 0.75rem;
 }
 
-
 /*
  * MUSIC
  */
@@ -276,9 +259,9 @@ p.instrumentation {
 .duration {
   color: $gray;
 }
-
 .program-notes {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*

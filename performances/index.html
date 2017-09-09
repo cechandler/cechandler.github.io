@@ -16,8 +16,8 @@ title: Performances
 	<button
 		type="button"
 		class="btn btn-outline-secondary btn-sm filter-event"
-		data-filter="all">
-		All
+		data-filter=".recent">
+		Recent
 	</button>
 
 	<!-- conditionally generate buttons based on current year variable -->
@@ -29,6 +29,13 @@ title: Performances
 			{{ i }}
 		</button>
 	{% endfor %}
+
+	<button
+		type="button"
+		class="btn btn-outline-secondary btn-sm filter-event"
+		data-filter="all">
+		All
+	</button>
 
 </div>
 
@@ -42,20 +49,20 @@ title: Performances
 			{% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
 			{% capture perf_date %}{{ full_date | date: '%s' }}{% endcapture %}
 
-			<div class="performance {{ entry.Year }} {% if perf_date > time_now %} upcoming {% endif %}">
+			<div class="performance {{ entry.Year }} {% if perf_date > time_now %}upcoming {% endif %} {% if forloop.index < 11 %}recent {% endif %}">
 
 				<div class="row">
 
 					 {% if entry.Image == null %}
-					 <div class="col-4">
+					 <div class="col-5 col-md-4 ml-auto">
 					 </div>
 					 {% else %}
-					   <div class="col-4">
+					   <div class="col-5 col-md-4 ml-auto">
 							 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image" class="img-thumbnail"/>
 						 </div>
 					 {% endif %}
 
-				 	 <div class="details col-8">
+				 	 <div class="details col-6 col-md-4 mr-auto">
 						 <h3 class="date">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</h3>
 						 <h4 class="location">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</h4>
 
@@ -95,12 +102,11 @@ title: Performances
 						 {% if entry.Repertoire == null %}
 						 		<p class="composition">{{ entry.Composition }}</p>
 						 {% else %}
-						 		<p class="price">{{ entry.Price }}</p>
 						 {% endif %}
 
 				 	 </div><!-- /.details -->
 
-				 </div><!-- /.row hidden at extra small -->
+				 </div><!-- /.row -->
 
 			</div><!-- /.performance -->
 		{% endif %}
