@@ -1,11 +1,11 @@
 {% if include.hidden == "N" %}
   <a class="fancybox" rel="gallery" href="{{ site.baseurl }}/assets/scores/{{ include.file }}">
-    <img src="{{ site.baseurl }}/assets/scores/{{ include.file }}" alt="" style="width:100%;height:100%;"/>
+    <img src="{{ site.baseurl }}/assets/scores/{{ include.file }}" alt="score-excerpt" class="img-fluid pb-sm-4"/>
   </a>
 {% elsif include.hidden == "Y" %}
   <div class="hidden">
     <a class="fancybox" rel="gallery" href="{{ site.baseurl }}/assets/scores/{{ include.file }}">
-      <img src="{{ site.baseurl }}/assets/scores/{{ include.file }}" alt="" style="width:100%;height:100%;"/>
+      <img src="{{ site.baseurl }}/assets/scores/{{ include.file }}" alt="score-excerpt" class="img-fluid pb-sm-4"/>
     </a>
   </div>
 {% else %}

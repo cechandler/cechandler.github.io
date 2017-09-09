@@ -4,23 +4,21 @@
     {% elsif entry.Special contains "E" %}
     {% elsif entry.Special contains "F" %}
       {% if entry.Image == null %}
-        <div class="work {{ entry.Type }}">
-           <div class="col-xs-12 info">
-            {% if entry.Link == null %}
-              <span class="title">{{ entry.Work }}</span>
-            {% else %}
-              <span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
-            {% endif %}
-             <span class="year">({{ entry.Year }})</span>
-             <p class="instrumentation">for {{ entry.Instrumentation }}</p>
-           </div> <!-- /info -->
+        <div class="col-12 pb-3 pl-0 info work {{ entry.Type }}">
+          {% if entry.Link == null %}
+            <span class="title">{{ entry.Work }}</span>
+          {% else %}
+            <span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
+          {% endif %}
+           <span class="year">({{ entry.Year }})</span>
+           <p class="instrumentation">for {{ entry.Instrumentation }}</p>
          </div> <!-- /.work -->
       {% else %}
-        <div class="work {{ entry.Type }}">
-          <div class="col-xs-4">
+        <div class="col-4 work {{ entry.Type }}">
+          <div class="">
             <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image"/>
           </div>
-          <div class="col-xs-8 info">
+          <div class="col-8 info">
             {% if entry.Link == null %}
               <span class="title">{{ entry.Work }}</span>
             {% else %}

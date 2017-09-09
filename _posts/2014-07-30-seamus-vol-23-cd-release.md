@@ -12,7 +12,7 @@ I am very pleased to announce the release of *Music from SEAMUS Volume 23*. The 
 
 <div class="row">
     <div class="col-sm-3">
-      <img src="{{site.baseurl}}/assets/img/seamus-vol23.jpg" alt="SEAMUS CD cover" width="100%" height="100%" border="" align="" />
+      <img src="{{ site.baseurl }}/assets/img/seamus-vol23.jpg" alt="SEAMUS CD cover" class="img-fluid img-thumbnail" />
     </div>
 
     <div class="col-sm-9">

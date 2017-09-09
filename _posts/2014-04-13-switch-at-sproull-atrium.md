@@ -7,10 +7,24 @@ author: Chris
 categories: news
 tags:
 - performance
+program:
+- composer: Bryan Jacobs
+  title: TSTS
+  year: 2010
+  instrumentation: for septet & electronics <br>International Call for Scores Winner
+- composer: Panayiotis Kokoras
+  title: Morphallaxis
+  year: 2008
+  instrumentation: for flute, cello, frame drum & electronics
+- composer: Clay Mettens
+  title: Labyrinth Meditations
+  year: 2014
+  instrumentation: for oboe & electronics
+- composer: Zach Sheets
+  title: Seer
+  year: 2014
+  instrumentation: for sensor-augmented bass clarinet & electronics
 ---
 The Switch~ Ensemble performs on the Eastman Computer Music Center's spring concert on April 13th in the Sproull Atrium of Eastman's Miller Center. The program includes:
 
-Bryan Jacobs - *TSTS* (2010) for septet & electronics (International Call for Scores Winner)  
-Panayiotis Kokoras - *Morphallaxis* (2008) for flute, cello, frame drum & electronics  
-Clay Mettens - *Labyrinth Meditations* (2014) for oboe & electronics  
-Zach Sheets - *Seer* (2014) for sensor-augmented bass clarinet & electronics  
+{% include program-markup.html %}

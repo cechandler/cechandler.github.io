@@ -12,5 +12,5 @@ tags:
 [*the resonance after...*]({{site.baseurl}}/music/the-resonance-after.html) has received first prize in the Austin Peay State University Young Composer's Competition!
 
 <div class="text-center">
-  <img src="{{site.baseurl}}/assets/img/austin-peay-logo.jpg" alt="Austin Peay" width="50%" height="50%" border="" align="" />
+  <img src="{{site.baseurl}}/assets/img/austin-peay-logo.jpg" alt="Austin Peay" class="img-fluid img-thumbnail"/>
 </div>

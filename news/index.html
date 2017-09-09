@@ -11,7 +11,7 @@ title: News
 
       {% assign currentdate = post.date | date: "%Y" %}
       {% if currentdate != date %}
-        <h2 id="y{{post.date | date: "%Y"}}" class="news-year text-center {% if forloop.first %}mt-1{% endif %}">{{ currentdate }}</h2>
+        <h2 id="y{{post.date | date: "%Y"}}" class="news-year text-center {% if forloop.first %}mt-0{% endif %}">{{ currentdate }}</h2>
         {% assign date = currentdate %}
       {% endif %}
 
@@ -21,7 +21,7 @@ title: News
             <span class="font-weight-bold">{{ post.title }}</span>
           </div>
           <div class="post-content">
-            {{ post.content }}
+            <div class="alert alert-dark">{{ post.content }}</div>
           </div>
           <div class="post-footer"></div>
           <!-- <hr /> -->

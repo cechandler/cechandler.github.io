@@ -7,18 +7,36 @@ author: Chris
 categories: news
 tags:
 - performance
+program:
+- composer: Zach Sheets
+  title: Seer
+  year: 2014
+  instrumentation: for sensor-augmented bass clarinet & electronics
+- composer: Stylianos Dimou
+  title: '[Hiss] structure...from {with[in} - g]'
+  year: 2015
+  instrumentation: for flute, cello, piano & electronics
+- composer: Stefan Prins
+  title: 'Flesh+Prosthesis #1'
+  year: 2013
+  instrumentation: for tenor sax, e-guitar, piano, percussion & electronics
+- composer: Wojtek Blecharz
+  title: "Transcryptum: K'an"
+  year: 2012
+  instrumentation: for steel drum and ca. 130 sticks
+- composer: Wojtek Blecharz
+  title: 'Transcryptum: The map of tenderness'
+  year: 2013
+  instrumentation: for cello solo
+- composer: Jason Thorpe Buchanan
+  title: 'Hunger: A Multimedia Opera in Four Parts'
+  year: 'Part III, 2015'
+  instrumentation: for three singers, octet, electronics & video projection
 ---
 The Switch~ Ensemble performed a curated concert on MATA's Interval Series. The concert took place in New York City on May 15th at the DiMenna Center. The program included:
 
-Zach Sheets - *Seer* (2014) for sensor-augmented bass clarinet & electronics  
-Stylianos Dimou - *[Hiss] structure...from {with[in} - g]* (2015) for flute, cello, piano & electronics  
-Stefan Prins - *Flesh+Prosthesis \#1* (2013) for tenor sax, e-guitar, piano, percussion & electronics  
-Wojtek Blecharz - *Transcryptum* (selections):  
-  1. *K'an* for steel drum and ca. 130 sticks (2012)  
-  2. *The map of tenderness* for cello solo (2013)  
-
-Jason Thorpe Buchanan - *Hunger: A Multimedia Opera in Four Parts* (Part III, 2015) for three singers, octet, electronics & video projection  
+{% include program-markup.html %}
 
 <div class="text-center">
-  <img src="{{site.baseurl}}/assets/img/switch-mata.jpg" alt="Switch MATA Poster" width="50%" height="50%" border="" align="" />
+  <img src="{{site.baseurl}}/assets/img/switch-mata.jpg" alt="Switch MATA Poster" class="img-fluid img-thumbnail"/>
 </div>

@@ -7,15 +7,25 @@ author: Chris
 categories: news
 tags:
 - performance
+program:
+- composer: Chris Chandler
+  title: Smoke and Mirrors
+- composer: Lisa Streich
+  title: Asche
+- composer: Clay Mettens
+  title: He Dreams a Mother^  
+- composer: Santiago Diez-Fischer
+  title: Loop's Definition*  
+- composer: Anthony Vine
+  title: Things Fall Apart
+- composer: Alexander Schubert
+  title: Star Me Kitten*
 ---
 The Switch~ Ensemble performed *Alternating Currents*, a program of electroacoustic and multimedia works, on the Queens New Music Festival at the Big Secret Theatre. The concert featured a number of American and New York premieres:
 
-Chris Chandler - *Smoke and Mirrors*  
-Lisa Streich - *Asche*  
-Clay Mettens - *He Dreams a Mother*^  
-Santiago Diez-Fischer - *Loop’s Definition*\*  
-Anthony Vine - *Things Fall Apart*  
-Alexander Schubert - *Star Me Kitten*\*
+{% include program-markup.html %}
 
-^ New York premiere  
-\* American premiere
+<div class="text-center">
+  ^ New York premiere <br>
+  * American premiere
+</div>
