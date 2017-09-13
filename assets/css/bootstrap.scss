@@ -239,6 +239,8 @@ a.nav-link:focus {
   font-style: italic;
 }
 @include media-breakpoint-up(sm) {
+  .performance .date,
+  .performance .location,
   .performance .performer,
   .performance .conductor,
   .performance .event,

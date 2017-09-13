@@ -6359,6 +6359,8 @@ a.nav-link:focus {
   font-style: italic; }
 
 @media (min-width: 576px) {
+  .performance .date,
+  .performance .location,
   .performance .performer,
   .performance .conductor,
   .performance .event,
