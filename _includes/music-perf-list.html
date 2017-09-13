@@ -1,4 +1,4 @@
-<h3 class="text-center text-md-left">Performances</h3>
+<h3 class="text-center text-md-left mb-3">Performances</h3>
 <div class="perf-list">
 	<!-- liquid capture stores variable -->
 	<!-- %s filter is a unix timestamp to compare current time with performance date for upcoming class -->
@@ -8,13 +8,12 @@
 			{% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
 			{% capture perf_date %}{{ full_date | date: '%s' }}{% endcapture %}
 
-			<div class="performance {{ entry.Year }} {% if perf_date > time_now %}upcoming {% else %}past {% endif %}">
+			<div class="performance {{ entry.Year }} {% if perf_date > time_now %}upcoming{% else %}past{% endif %} mb-3">
 
 				<div class="row">
 
 					 {% if entry.Image == null %}
-					 <div class="col-5 col-md-3 ml-sm-auto">
-					 </div>
+					 <div class="col-5 col-md-3 ml-sm-auto"></div>
 					 {% else %}
 					   <div class="col-5 col-md-3 ml-sm-auto">
 							 <img src="{{ site.baseurl }}/assets/img/{{ entry.Image }}" alt="image" class="img-thumbnail"/>
@@ -33,21 +32,21 @@
 
 						 {% if entry.Event == null %}
 						 {% else %}
-						 		<p class="event">{{ entry.Event }}</p>
+						 	 <p class="event">{{ entry.Event }}</p>
 						 {% endif %}
 
 						 <div class="address">
-							 <p>{{ entry.Venue }}</p>
+							 <p class="venue">{{ entry.Venue }}</p>
 
 							 {% if entry.Street == null %}
 							 {% else %}
-							 	 <p>{{ entry.Street }}</p>
+							 	 <p class="street">{{ entry.Street }}</p>
 							 {% endif %}
 
-							 <p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
+							 <p class="citystate">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
 						 </div>
 
-						 {% if entry.Time == null %}
+						 <!-- {% if entry.Time == null %}
 						 {% else %}
 						 		<p class="time">{{ entry.Time }}</p>
 						 {% endif %}
@@ -56,6 +55,10 @@
 						 {% else %}
 						 		<p class="price">{{ entry.Price }}</p>
 						 {% endif %}
+
+						 {% if entry.Repertoire == null %}
+						 {% else %}
+						 {% endif %} -->
 
 				 	 </div><!-- /.details -->
 				 </div><!-- /.row -->

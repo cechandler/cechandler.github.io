@@ -49,7 +49,7 @@ title: Performances
 			{% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
 			{% capture perf_date %}{{ full_date | date: '%s' }}{% endcapture %}
 
-			<div class="performance {{ entry.Year }} {% if perf_date > time_now %}upcoming {% endif %} {% if forloop.index < 11 %}recent {% endif %}">
+			<div class="performance {{ entry.Year }} {% if perf_date > time_now %}upcoming {% endif %}{% if forloop.index < 11 %}recent{% endif %} mb-5">
 
 				<div class="row">
 
@@ -66,6 +66,8 @@ title: Performances
 						 <h3 class="date">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</h3>
 						 <h4 class="location">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</h4>
 
+						 <p class="composition my-3">{{ entry.Composition }}</p>
+
 						 {% if entry.Conductor == null %}
 						 	 <p class="performer">{{ entry.Performers }}</p>
 						 {% else %}
@@ -79,17 +81,17 @@ title: Performances
 						 {% endif %}
 
 						 <div class="address">
-							 <p>{{ entry.Venue }}</p>
+							 <p class="venue">{{ entry.Venue }}</p>
 
 							 {% if entry.Street == null %}
 							 {% else %}
-							 	 <p>{{ entry.Street }}</p>
+							 	 <p class="street">{{ entry.Street }}</p>
 							 {% endif %}
 
-							 <p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
+							 <p class="citystate">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
 						 </div>
 
-						 {% if entry.Time == null %}
+						 <!-- {% if entry.Time == null %}
 						 {% else %}
 						 		<p class="time">{{ entry.Time }}</p>
 						 {% endif %}
@@ -100,9 +102,8 @@ title: Performances
 						 {% endif %}
 
 						 {% if entry.Repertoire == null %}
-						 		<p class="composition">{{ entry.Composition }}</p>
 						 {% else %}
-						 {% endif %}
+						 {% endif %} -->
 
 				 	 </div><!-- /.details -->
 

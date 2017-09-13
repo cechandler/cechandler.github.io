@@ -8,7 +8,7 @@
 			{% capture full_date %}{{ entry.Year }}-{{ entry.Month }}-{{ entry.Day }}{% endcapture %}
 			{% capture perf_date %}{{ full_date | date: '%s' }}{% endcapture %}
 
-				<div class="performance {{ entry.Year }} {% if perf_date > time_now %}upcoming {% else %}past {% endif %}">
+				<div class="latestperf {{ entry.Year }} {% if perf_date > time_now %}upcoming {% else %}past{% endif %} mb-3">
 
 					<div class="row">
 
@@ -24,6 +24,8 @@
 					 	 <div class="details col-9">
 							 <p class="date font-weight-bold">{{ full_date | date:"%B" }} {{ full_date | date: "%-d" }}, {{ full_date | date: "%Y" }}</p>
 
+							 <p class="composition mb-1">{{ entry.Composition }}</p>
+
 							 {% if entry.Conductor == null %}
 							 	 <p class="performer">{{ entry.Performers }}</p>
 							 {% else %}
@@ -37,10 +39,8 @@
 							 {% endif %}
 
 							 <div class="address">
-								 <p>{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
+								 <p class="citystate">{% if entry.City == null %}{% else %}{{ entry.City }}, {% endif %}{{ entry.State }}</p>
 							 </div>
-
-						 		<p class="composition">{{ entry.Composition }}</p>
 
 					 	 </div><!-- /.details -->
 					 </div><!-- /.row -->

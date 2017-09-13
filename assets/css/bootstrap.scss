@@ -124,6 +124,19 @@ hr {
   border: 0;
 }
 
+.bg {
+    /* The image used */
+    background-image: url("{{ site.baseurl }}/assets/img/chris-chandler-headshot-woods.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*
  * Navigation
  */
@@ -159,7 +172,7 @@ a.nav-link:focus {
  }
 .container {
   width: 100%;
-  max-width: 58rem;
+  max-width: 50rem;
 }
 
 /*
@@ -208,34 +221,26 @@ a.nav-link:focus {
 .recording {
   margin-bottom: 3rem;
 }
-.recording .work {
-  font-style: italic;
-}
 
 /*
  * PERFORMANCES
  */
-.performance {
-  margin-bottom: 3rem;
-}
-.latest .performance {
-  margin-bottom: 1rem;
-}
-.performance img,
-.latest img {
-  max-width: 100%;
-  max-height: 100%;
-  margin-bottom: 1rem;
-}
-.performance p {
+.performance p,
+.latestperf p {
   margin: 0rem;
 }
 .composition {
   font-style: italic;
-  padding-top: 0.75rem;
 }
-.location {
-  padding-bottom: 0.75rem;
+@include media-breakpoint-up(sm) {
+  .performance .performer,
+  .performance .conductor,
+  .performance .event,
+  .performance .venue,
+  .performance .street,
+  .performance .citystate  {
+    white-space: nowrap;
+  }
 }
 
 /*
