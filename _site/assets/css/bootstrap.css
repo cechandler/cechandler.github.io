@@ -6264,6 +6264,11 @@ hr {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.btn-outline-secondary:active, .btn-outline-secondary.active, .show > .btn-outline-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #373a3c;
+  border-color: #373a3c; }
+
 /*
  * Navigation
  */
@@ -6364,9 +6369,6 @@ a.nav-link:focus {
 /*
  * MUSIC
  */
-.filters {
-  margin-bottom: 1rem; }
-
 .instrumentation {
   color: #55595c; }
 
