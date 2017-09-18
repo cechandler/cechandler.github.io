@@ -4,57 +4,58 @@ title: Music
 ---
 
 <div class="row">
-	<div class="filters col-5 col-sm-5 col-md-3 order-1 order-sm-1 order-md-2 mx-auto mb-3 mb-md-0">
+	<div class="filters col-4 order-1 mx-auto mb-3 mb-md-0">
 		<h5 class="text-center">Instrumentation</h5>
-		<button
-			type="button"
-			class="btn btn-outline-secondary btn-sm btn-block filter-work"
-			data-filter="all">
+		<button type="button" class="btn btn-outline-secondary btn-sm btn-block filter-work" data-filter="all">
 			All
 		</button>
-		<button
-			type="button"
-			class="btn btn-outline-secondary btn-sm btn-block filter-work"
-			data-filter=".large">
+		<button type="button" class="btn btn-outline-secondary btn-sm btn-block filter-work" data-filter=".large">
 			Large Ensemble
 		</button>
-		<button
-			type="button"
-			class="btn btn-outline-secondary btn-sm btn-block filter-work"
-			data-filter=".chamber">
+		<button type="button" class="btn btn-outline-secondary btn-sm btn-block filter-work" data-filter=".chamber">
 			Chamber Ensemble
 		</button>
-		<button
-			type="button"
-			class="btn btn-outline-secondary btn-sm btn-block filter-work"
-			data-filter=".electroacoustic">
+		<button type="button" class="btn btn-outline-secondary btn-sm btn-block filter-work" data-filter=".electroacoustic">
 			Electroacoustic
 		</button>
-		<button
-			type="button"
-			class="btn btn-outline-secondary btn-sm btn-block filter-work"
-			data-filter=".solo">
+		<button type="button" class="btn btn-outline-secondary btn-sm btn-block filter-work" data-filter=".solo">
 			Solo
 		</button>
 	</div>
 
-	<div class="mixitup-music works-list col-12 col-md-9 order-2 order-sm-2 order-md-1 text-center text-md-left">
-		{% for entry in site.data.works %}
-			{% if entry.Work == null %}
-			{% elsif entry.Special == "E" %}
-			{% else %}
-			<div class="pb-3 work {{ entry.Type }}">
-				 <div class="col-xs-12 info">
-					{% if entry.Link == null %}
-						<span class="title">{{ entry.Work }}</span>
-					{% else %}
-						<span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
-					{% endif %}
-					 <span class="year">({{ entry.Year }})</span>
-					 <p class="instrumentation">for {{ entry.Instrumentation }}</p>
-				 </div> <!-- /info -->
-			 </div> <!-- /.work -->
-			{% endif %}
-		{% endfor %}
-	</div><!-- /.mixitup-music -->
-</div><!-- ./row -->
+	<div class="mixitup-music works-list col-12 order-2">
+		<div class="row">
+			{% for entry in site.data.works %}
+				{% if entry.Work == null %}
+					{% elsif entry.Special == "E" %}
+				{% else %}
+					<div class="col-12 col-sm-6 mb-3">
+						<div class="card work {{ entry.Type }}">
+							<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+							<!-- <iframe class="card-img-top embed-responsive-item" src="https://www.youtube.com/embed/a06kThuHSOY" allowfullscreen></iframe> -->
+							<div class="card-body">
+								<h5 class="card-title">{{ entry.Work }}</h5>
+								<p class="card-text instrumentation"><small>for {{ entry.Instrumentation }}</small></p>
+								<p class="card-text"><small class="text-muted">{{ entry.Year }}</small></p>
+								{% if entry.Link == null %}
+								{% else %}
+									<a href="{{ site.baseurl }}/music/{{ entry.Link }}.html" class="btn btn-outline-secondary btn-sm">More Info</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+	<!-- /.mixitup-music -->
+</div>
+<!-- ./row -->
+
+<!-- <div class="card">
+	<img class="card-img-top" src="..." alt="Card image cap">
+	<div class="card-body">
+		<h4 class="card-title">Card title</h4>
+		<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	</div> -->
