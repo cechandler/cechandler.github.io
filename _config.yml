@@ -7,7 +7,10 @@ description: > # this means to ignore newlines until "baseurl:"
  Website for the composer Christopher Chandler.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-last-modified-at
+
 paginate_path: "/news/page:num"
 
 # Build settings
