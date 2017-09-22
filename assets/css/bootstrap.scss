@@ -117,11 +117,13 @@ body a.fancybox-close {
   border-bottom: 0px solid $gray-lighter;
 }
 
-body.Curriculum h4 {
-}
-
 body.Curriculum h3 {
   margin-top: 1.5rem;
+}
+
+body.Curriculum ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 hr {
