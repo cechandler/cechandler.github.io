@@ -26,7 +26,7 @@ $brand-info:                #5bc0de;
 $brand-warning:             #f0ad4e;
 $brand-danger:              #d9534f;
 
-$background-color:          $gray-lighterer;
+$background-color:          $gray-lightest;
 $container-color:           $gray-lightest;
 $body-bg:                   $background-color;
 
@@ -116,6 +116,16 @@ body a.mejs-horizontal-volume-slider,
 body a.fancybox-close {
   border-bottom: 0px solid $gray-lighter;
 }
+
+body.Curriculum h4 {
+  margin-top: 1.75rem;
+}
+
+body.Curriculum ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
 hr {
   width: 100px;
   height: 1px;

@@ -20,8 +20,9 @@ title: News
             <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
             <span class="font-weight-bold">{{ post.title }}</span>
           </div>
-          <div class="post-content">
-            <div class="alert alert-dark">{{ post.content }}</div>
+          <div class="post-content mx-3">
+            {{ post.content }}
+            <!-- <div class="alert alert-light">{{ post.content }}</div> -->
           </div>
           <div class="post-footer"></div>
           <!-- <hr /> -->
@@ -46,8 +47,9 @@ title: News
             <a class="collapsed font-weight-bold" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ post.id | remove: '/'}}" aria-expanded="false" aria-controls="collapse-{{ post.id | remove: '/'}}">{{ post.title }}</a>
           </span>
         </div>
-        <div id="collapse-{{ post.id | remove: '/'}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ post.id | remove: '/'}}">
-          <div class="alert alert-dark">{{ post.content }}</div>
+        <div id="collapse-{{ post.id | remove: '/'}}" class="mx-3 mt-3 mb-4 panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ post.id | remove: '/'}}">
+          {{ post.content }}
+          <!-- <div class="alert alert-light">{{ post.content }}</div> -->
         </div>
 
         {% endfor %}
