@@ -1,5 +1,6 @@
 # not using plugins so don't push local build
 _site/
+.sass-cache/
 
 # ignore vim and locked files
 .~lock*
