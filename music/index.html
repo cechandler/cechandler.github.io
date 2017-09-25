@@ -40,15 +40,15 @@ title: Music
 
 	<div class="mixitup-music works-list col-12 col-md-9 order-2 order-sm-2 order-md-1 text-center text-md-left">
 		{% for entry in site.data.works %}
-			{% if entry.Work == null %}
+			{% if entry.Title == null %}
 			{% elsif entry.Special == "E" %}
 			{% else %}
 			<div class="pb-3 work {{ entry.Type }}">
 				 <div class="col-xs-12 info">
 					{% if entry.Link == null %}
-						<span class="title">{{ entry.Work }}</span>
+						<span class="title">{{ entry.Title }}</span>
 					{% else %}
-						<span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
+						<span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Title }}</a></span>
 					{% endif %}
 					 <span class="year">({{ entry.Year }})</span>
 					 <p class="instrumentation">for {{ entry.Instrumentation }}</p>

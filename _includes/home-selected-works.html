@@ -1,14 +1,13 @@
 <div class="latest selected-works">
   {% for entry in site.data.works %}
-    {% if entry.Work == null %}
-    {% elsif entry.Special contains "E" %}
+    {% if entry.Title == null %}
     {% elsif entry.Special contains "F" %}
       {% if entry.Image == null %}
         <div class="col-12 pb-3 pl-0 info work {{ entry.Type }}">
           {% if entry.Link == null %}
-            <span class="title">{{ entry.Work }}</span>
+            <span class="title">{{ entry.Title }}</span>
           {% else %}
-            <span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
+            <span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Title }}</a></span>
           {% endif %}
            <span class="year">({{ entry.Year }})</span>
            <p class="instrumentation">for {{ entry.Instrumentation }}</p>
@@ -20,9 +19,9 @@
           </div>
           <div class="col-8 info">
             {% if entry.Link == null %}
-              <span class="title">{{ entry.Work }}</span>
+              <span class="title">{{ entry.Title }}</span>
             {% else %}
-              <span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Work }}</a></span>
+              <span class="title"><a href="{{ site.baseurl }}/music/{{ entry.Link }}.html">{{ entry.Title }}</a></span>
             {% endif %}
              <span class="year">({{ entry.Year }})</span>
              <p class="instrumentation">for {{ entry.Instrumentation }}</p>
