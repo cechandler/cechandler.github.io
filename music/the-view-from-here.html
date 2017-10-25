@@ -31,9 +31,9 @@ title: the view from here
 
         {% include music-title.html %}
 
-        <div class="alert alert-info" role="alert">
-            Recordings and score coming soon!
-        </div>
+        {% include music-audio.html file="tvfh-mvmt1" name="I. drones and swells of the not far road (skyline drive)" %}
+        {% include music-audio.html file="tvfh-mvmt2" name="II. a point off in the blue woods (big meadows)" %}
+        {% include music-audio.html file="tvfh-mvmt3" name="III. moving points in the hooves and feet of animals (hawksbill)" %}
 
         {% include music-program-notes.html %}
 
@@ -41,7 +41,16 @@ title: the view from here
 
       <div class="col-9 col-md-5 pb-4 pb-md-0 mx-auto">
 
-        {% include music-score.html %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-00.png" %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-01.png" %}
+        {% include music-score.html hidden="N" file="the-view-from-here-02.png" %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-03.png" %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-04.png" %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-05.png" %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-06.png" %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-07.png" %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-08.png" %}
+        {% include music-score.html hidden="Y" file="the-view-from-here-09.png" %}
 
       </div>
 
