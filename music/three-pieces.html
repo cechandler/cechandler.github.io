@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Two Pieces for Chamber Orchestra
+title: Three Pieces for Chamber Orchestra
 ---
 
-{% assign work = "Two Pieces for Chamber Orchestra" %}
+{% assign work = "Three Pieces for Chamber Orchestra" %}
 
 {% for entry in site.data.works %}
   {% if entry.Title == work %}
@@ -15,7 +15,7 @@ title: Two Pieces for Chamber Orchestra
 
           {% include music-title.html %}
 
-          {% include music-audio.html file="two-pieces-for-chamber-orchestra-mvmt-i" name="Movement I" %}
+          {% include music-audio.html file="three-pieces-mvmt-i" name="Movement I" %}
 
           {% include music-program-notes.html %}
 
@@ -29,7 +29,7 @@ title: Two Pieces for Chamber Orchestra
 
         {% include music-title.html %}
 
-        {% include music-audio.html file="two-pieces-for-chamber-orchestra-mvmt-i" name="Movement I" %}
+        {% include music-audio.html file="three-pieces-mvmt-i" name="Movement I" %}
 
         {% include music-program-notes.html %}
 
