@@ -1,4 +1,12 @@
-<h3 class="text-center text-md-left mb-3">Performances</h3>
+{%- assign printHeader = true -%}
+{%- for entry in site.data.performances -%}
+	{%- if entry.Composition == work -%}
+		{%- if printHeader == true -%}
+			<h3 class="text-center text-md-left mb-3">Performances</h3>
+			{%- assign printHeader = false -%}
+		{%- endif -%}
+	{%- endif -%}
+{%- endfor -%}
 <div class="perf-list">
 	<!-- liquid capture stores variable -->
 	<!-- %s filter is a unix timestamp to compare current time with performance date for upcoming class -->
