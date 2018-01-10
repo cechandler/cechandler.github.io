@@ -32,7 +32,7 @@ The functionality of the parameters in the image above are:
 - `start position:` the location within a given buffer from which to begin playback, where 0.0 is the beginning of the file and 1.0 is the end
 - `pan:` the stereo location of the sound on a range from -1.0 to 1.0 (left to right)
 
-Inside the software there is a flexible and powerful abstraction called `the_patterner` that allows one to control each of these parameters through the use of special keywords. Keywords are followed by arguments (integers, floating point numbers, and symbols) that allow for variation and randomization of a given parameter. At the current moment there are five functioning keywords, below is a list of them and the way in which they can be implemented (optional arguments are given in &lt;these braces&gt;):
+Inside the software there is a flexible and powerful custom abstraction called `the_patterner` that allows one to control each of these parameters through the use of special keywords. Keywords are followed by arguments (integers, floating point numbers, and symbols) that allow for variation and randomization of a given parameter. At the current moment there are five functioning keywords, below is a list of them and the way in which they can be implemented (optional arguments are given in &lt;these braces&gt;):
 
 ##### `range` &lt;distribution&gt; lo hi
 
@@ -96,7 +96,7 @@ These next two have older interfaces but showcase different sounds:
 
 <img src="{{ site.baseurl }}/assets/img/granular-synthesis.png" class="img-fluid" alt="Screenshot of Granular Synth">
 
-Granular synthesis is a powerful tool for sound design that I frequently use my compositional work. This custom patch in Max/MSP is a creative tool for sound generation and also a pedagogical tool that I have given to students allowing them to explore granular synthesis through this interface.
+Granular synthesis is a powerful tool for sound design that I frequently use in my compositional work. This custom patch in Max/MSP is a creative tool for sound generation and also a pedagogical tool that I have given to students, allowing them to explore granular synthesis and all of its essential parameters through this interface.
 
 The software:
 
@@ -117,6 +117,17 @@ The software:
 <img class="my-3" src="{{ site.baseurl }}/assets/img/comp-tools-sets.png" class="img-fluid" alt="Screenshot of Comp Tools">
 
 <img class="my-3" src="{{ site.baseurl }}/assets/img/comp-tools-interval-cycles.png" class="img-fluid" alt="Screenshot of Interval Cycles">
+
+I have built a number of set theory tools for composition and analysis, two of which are shown above. Most of the tools make extensive use of the [`bach`](http://http://www.bachproject.net/) externals for calculations and notation display.
+
+In the first picture shown above, the interface takes a list of pitch-classes from which a number of useful characteristics are displayed:
+
+- prime form, normal form, interval vector, and complement
+- all transpositions, inversions, M, and MI operations
+- common tones between these operations
+- Robert Morris' set class inclusion table and all members included with a given set class
+
+The second screenshot displays a tool for generating a sequence of interval cycle chords. The tool allows for up to four voices with independent interval cycle collections. The contour, starting pitch, octave location, and rotation of each voice can all be controlled. The sequence of chords can be auditioned, and further manipulated using any of the `bach.roll` notation display functions (including expanding/compressing duration and transposition).
 
 <div class="col-12 mb-4 text-center">
   <a href="#" class="btn btn-outline-secondary">Download</a>
