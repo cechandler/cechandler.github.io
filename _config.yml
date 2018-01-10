@@ -26,6 +26,8 @@ navigation:
    url: /news/
  - title: Music
    url: /music/
+ - title: Research
+   url: /research/tools/
  - title: Recordings
    url: /recordings/
  - title: Performances
