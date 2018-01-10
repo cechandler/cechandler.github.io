@@ -7,11 +7,15 @@ title: Tools
 
 Below you can find a selection of recent tools that I have developed for compositional and analytical projects. Some of these are still in active development, so be aware there may be bugs or idiosyncrasies in functionality. There are links to download some of the tools, and all that I ask is that you let me know if you find them useful and please give attribution if you repurpose some of my work in your own. Please be in touch if you find any bugs.
 
-## Generative Sound File Player
+<h2 class="my-3">Generative Sound File Player</h2>
 
 <img src="{{ site.baseurl }}/assets/img/gsfp1.png" class="img-fluid" alt="Screenshot of GSFP">
 
-The Generative Sound File Player is my most recent tool that allows for the algorithmic sound file playback with controls for real-time manipulation. One can load up and sequence any number of sound files using a variety of parameters, which you can see on the interface screenshot above. Currently, the controls to interact with the GSFP are text-based but the organization of the software will allow for easy implementation of graphic control (through user interface objects or touch-based controllers) in the near future.
+The Generative Sound File Player is my most recent tool that allows for the algorithmic sound file playback with controls for real-time manipulation. One can load up and sequence any number of sound files using a variety of parameters, which you can see on the interface screenshot above. In this screenshot and the video demo below, there are two independent voices that can be triggered. But an arbitrary number of separate voices is possible, constrained only by the processing power of the computer it is running on. The controls to interact with the GSFP are currently only text-based but the organization of the software allows for easy implementation of graphic control (through user interface objects or touch-based controllers) in the near future.
+
+<div class="col-12 mb-4 text-center">
+  <a href="#" class="btn btn-outline-secondary">Download</a>
+</div>
 
 The functionality of the parameters in the image above are:
 
@@ -72,8 +76,48 @@ Inside the software there is a flexible and powerful abstraction called `the_pat
 - list: any list of ints/floats/symbols
 - weights: list of ints/floats
 
-Check out two videos of how it works below:
+Check out videos of it below:
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="embed-responsive embed-responsive-16by9 my-3">
   <iframe class="embed-responsive-item" src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration.mp4"></iframe>
+</div>
+
+These next two have older interfaces but showcase different sounds:
+
+<div class="embed-responsive embed-responsive-16by9 my-3">
+  <iframe class="embed-responsive-item" src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration2.mp4"></iframe>
+</div>
+
+<div class="embed-responsive embed-responsive-16by9 my-3">
+  <iframe class="embed-responsive-item" src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration3.mp4"></iframe>
+</div>
+
+<h2 class="mt-5 mb-3">Granular Synthesis</h2>
+
+<img src="{{ site.baseurl }}/assets/img/granular-synthesis.png" class="img-fluid" alt="Screenshot of Granular Synth">
+
+Granular synthesis is a powerful tool for sound design that I frequently use my compositional work. This custom patch in Max/MSP is a creative tool for sound generation and also a pedagogical tool that I have given to students allowing them to explore granular synthesis through this interface.
+
+The software:
+
+- uses both synchronous and asynchronous granular synthesis
+- can load 3 sound files (but it's arbitrary to increase that number)
+- can randomly select from those files or use only one
+- allows a wide range of grain rate and grain size (controlled via the XY slider in the center)
+- allows for a variety of window shapes to be applied to grains
+- gives controls for traversal rate through the sound file and transposition of it
+- allows for recording the output in separate module (not pictured)
+
+<div class="col-12 mb-4 text-center">
+  <a href="#" class="btn btn-outline-secondary">Download</a>
+</div>
+
+<h2 class="mt-5 mb-3">Composition Tools</h2>
+
+<img class="my-3" src="{{ site.baseurl }}/assets/img/comp-tools-sets.png" class="img-fluid" alt="Screenshot of Comp Tools">
+
+<img class="my-3" src="{{ site.baseurl }}/assets/img/comp-tools-interval-cycles.png" class="img-fluid" alt="Screenshot of Interval Cycles">
+
+<div class="col-12 mb-4 text-center">
+  <a href="#" class="btn btn-outline-secondary">Download</a>
 </div>
