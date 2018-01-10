@@ -350,3 +350,39 @@ p.instrumentation {
 .mejs-container .mejs-controls {
   background: $gray-dark;
 }
+
+.offsetFix:before {
+  display: block;
+  position: relative;
+ 	content: "";
+  width: 0;
+	height: 100px;
+  margin-top: -100px;
+}
+@media (max-width: 991px) {
+  .offsetFix:before {
+    display: block;
+    position: relative;
+   	content: "";
+    width: 0;
+  	height: 100px;
+    margin-top: -100px;
+  }
+}
+
+.offsetFixFn:before {
+  position: relative;
+ 	content: "";
+  width: 0;
+	height: 100px;
+  margin-top: -100px;
+}
+@media (max-width: 991px) {
+  .offsetFixFn:before {
+    position: relative;
+   	content: "";
+    width: 0;
+  	height: 100px;
+    margin-top: -100px;
+  }
+}
