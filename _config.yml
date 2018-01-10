@@ -16,23 +16,6 @@ paginate_path: "/news/page:num"
 # Build settings
 markdown: kramdown
 
-# Navigation
-navigation:
- - title: Home
-   url: /index.html
- - title: About
-   url: /about/
- - title: News
-   url: /news/
- - title: Music
-   url: /music/
- - title: Research
-   url: /research/tools/
- - title: Recordings
-   url: /recordings/
- - title: Performances
-   url: /performances/
-
 # Outputting
 permalink: /:year/:month/:day/:title
 paginate: 10
