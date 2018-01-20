@@ -78,19 +78,19 @@ Inside the software there is a flexible and powerful custom abstraction called `
 
 Check out videos of it below:
 
-<div class="embed-responsive embed-responsive-16by9 my-3">
-  <iframe class="embed-responsive-item" src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration.mp4"></iframe>
-</div>
+<video class="my-3" width="100%" height="100%" controls="controls">
+  <source src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration.mp4" type="video/mp4">
+</video>
 
 These next two have older interfaces but showcase different sounds:
 
-<div class="embed-responsive embed-responsive-16by9 my-3">
-  <iframe class="embed-responsive-item" src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration2.mp4"></iframe>
-</div>
+<video class="my-3" width="100%" height="100%" controls="controls">
+  <source src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration2.mp4" type="video/mp4">
+</video>
 
-<div class="embed-responsive embed-responsive-16by9 my-3">
-  <iframe class="embed-responsive-item" src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration3.mp4"></iframe>
-</div>
+<video class="my-3" width="100%" height="100%" controls="controls">
+  <source src="{{ site.baseurl }}/assets/video/gsfp-video-demonstration3.mp4" type="video/mp4">
+</video>
 
 <h2 class="mt-5 mb-3">Granular Synthesis</h2>
 
