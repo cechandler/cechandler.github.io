@@ -21,7 +21,7 @@ The functionality of the parameters in the image above are:
 
 - `wait time:` the duration of time (in milliseconds) between the onsets of the GSFP being triggered
 - `density:` the number of "notes" or sound files to be triggered at the moment of an onset
-- `delta:` the time variation (in milliseconds) between note onsets (ie., the onset of the GFSP triggers 5 sounds, they can all happen at once with a delta of 0 or be displaced in time from one another)
+- `offset:` the time variation (in milliseconds) between note onsets (ie., the onset of the GFSP triggers 5 sounds, they can all happen at once with a delta of 0 or be displaced in time from one another)
 - `buffers:` the buffer names of sounds to use (folders of sounds can also be loaded with the keyword `key`)
 - `amp:` amplitude levels of sound file playback
 - `attack time:` the duration of the envelope's attack (in milliseconds)
