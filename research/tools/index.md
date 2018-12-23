@@ -43,10 +43,10 @@ Inside the software there is a flexible and powerful custom abstraction called `
 - function: randomly outputs values within the given range
 - arguments:
   - distribution:
-    - white = default (equal probability within the range)
+    - white (default, equal probability within the range)
     - drunk <num steps> (random walk within range)
-    - exponential / exp <slope> (weighted exponential probability towards upper values)
-    - reverse exponential / rexp <slope> (weighted exponential probability towards lower values)
+    - exp <slope> (exponential probability weighted towards upper values)
+    - rexp <slope> (reverse exponential probability weighted towards lower values)
       - slope: greater than 1.0 = steeper slope
       - default slope = 2.0
   - lo / hi:
