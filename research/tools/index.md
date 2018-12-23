@@ -31,6 +31,10 @@ The functionality of the parameters in the image above are:
 - `rate:` playback rate, where 1.0 is normal speed (0.5 is half speed, 2.0 is twice speed); specific keywords allow one to transpose in intervals (ie., 1 for minor 2nd higher, -12 for octave lower) or midicents (ie., 100 for minor second higher, -50 for quarter step lower, 1200 for octave higher)
 - `start position:` the location within a given buffer from which to begin playback, where 0.0 is the beginning of the file and 1.0 is the end
 - `pan:` the stereo location of the sound on a range from -1.0 to 1.0 (left to right)
+- `out:` output channels that the given voice will be sent
+  - for the moment, everything is reduced to a stereo image
+  - however, the different output channels allows each voice to be separated into a stereo stem when a recording is made
+  - using the recording controls in the upper right corner of the top row, set the number of channels you need in the number box (e.g., 16), press the toggle, and make sound
 
 Inside the software there is a flexible and powerful custom abstraction called `the_patterner` that allows one to control each of these parameters through the use of special keywords. Keywords are followed by arguments (integers, floating point numbers, and symbols) that allow for variation and randomization of a given parameter. At the current moment there are five functioning keywords, below is a list of them and the way in which they can be implemented (optional arguments are given in &lt;these braces&gt;):
 
@@ -97,7 +101,7 @@ Inside the software there is a flexible and powerful custom abstraction called `
   - `for` 5000 range 0.0 1.0 then 5000 range 10.0 100.0
     - means: for 5 seconds use floats within the range 0.0 to 1.0 then for 5 seconds use floats within the range 10.0 to 100.0
   - `forloop` 5000 range 0.0 1.0 then 5000 rand 1 2 3 4 5
-    - means: loop continuously between 5 seconds of floats in the range 0.0 to 1.0 then 5 seconds of randomly selection from the integers 1 2 3 4 5 
+    - means: loop continuously between 5 seconds of floats in the range 0.0 to 1.0 then 5 seconds of randomly selection from the integers 1 2 3 4 5
 
 Check out videos of it below:
 
