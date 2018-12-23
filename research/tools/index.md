@@ -70,11 +70,34 @@ Inside the software there is a flexible and powerful custom abstraction called `
 ##### `wrandom` or `wrand` [list][weights]
 
 - function: randomly selects from the given list according to the given relative weights
+- arguments:
   - brackets are required for the list and weights
-  - weights are normalized to 1
-  - both list and weights needs to be the same length
-- list: any list of ints/floats/symbols
-- weights: list of ints/floats
+  - list: any list of ints/floats/symbols
+  - weights: list of ints/floats
+    - weights are normalized to 1
+    - both list and weights needs to be the same length
+
+##### `move` or `moveloop` value1 value2 time
+
+- function: move linearly between value1 and value2 over defined time
+  - move stays a value2 when time is reached
+  - moveloop cycles back to value1 once value2 has been reached
+- arguments:
+  - value1 and value2: can only be ints/floats
+  - time: integer in milliseconds
+
+##### `for` or `forloop` time keyword arguments &lt;then&gt; ...
+
+- function: allows any of the above keywords to be used in sequence and combined
+- arguments:
+  - time: integer in milliseconds
+  - keyword arguments: any keyword listed above (e.g., random, range, sequence) followed by its respective arguments
+  - then: is an optional argument that allows a sequence of keywords
+- examples:
+  - `for` 5000 range 0.0 1.0 then 5000 range 10.0 100.0
+    - means: for 5 seconds use floats within the range 0.0 to 1.0 then for 5 seconds use floats within the range 10.0 to 100.0
+  - `forloop` 5000 range 0.0 1.0 then 5000 rand 1 2 3 4 5
+    - means: loop continuously between 5 seconds of floats in the range 0.0 to 1.0 then 5 seconds of randomly selection from the integers 1 2 3 4 5 
 
 Check out videos of it below:
 
