@@ -36,7 +36,7 @@ The functionality of the parameters in the image above are:
   - however, the different output channels allows each voice to be separated into a stereo stem when a recording is made
   - using the recording controls in the upper right corner of the top row, set the number of channels you need in the number box (e.g., 16), press the toggle, and make sound
 
-Inside the software there is a flexible and powerful custom abstraction called `the_patterner` that allows one to control each of these parameters through the use of special keywords. Keywords are followed by arguments (integers, floating point numbers, and symbols) that allow for variation and randomization of a given parameter. At the current moment there are five functioning keywords, below is a list of them and the way in which they can be implemented (optional arguments are given in &lt;these braces&gt;):
+Inside the software there is a flexible and powerful custom abstraction called `the_patterner` that allows one to control each of these parameters through the use of special keywords. Keywords are followed by arguments (integers, floating point numbers, and symbols) that allow for variation and randomization of a given parameter. At the current moment there are several functioning keywords, below is a list of them and the way in which they can be implemented (optional arguments are given in &lt;these braces&gt;):
 
 ##### `range` &lt;distribution&gt; lo hi
 
