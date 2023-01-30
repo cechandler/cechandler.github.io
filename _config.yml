@@ -1,7 +1,7 @@
 # DON'T USE TABS!!!
 
 # Site settings
-title: CEC | Composer
+title: Christopher Chandler | Composer
 email: christopher.e.chandler@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
  Website for the composer Christopher Chandler.
@@ -11,7 +11,6 @@ images: "/assets/img"
 plugins:
   - jekyll-paginate
   - jekyll-last-modified-at
-
 paginate_path: "/news/page:num"
 
 # Build settings
